@@ -2,8 +2,10 @@ package com.wxhh.easycommunity.dao;
 
 import com.wxhh.easycommunity.entity.User;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Component;
 
 @Mapper
+@Component
 public interface UserMapper {
     User selectById(int id);
 
