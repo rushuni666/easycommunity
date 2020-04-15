@@ -1,0 +1,104 @@
+2020-04-14 10:33:59.175  INFO 60423 --- [main] com.wxhh.easycommunity.MapperTests       : Starting MapperTests on macdeMacBook-Pro.local with PID 60423 (started by szw in /Users/szw/Downloads/easycommunity)
+2020-04-14 10:33:59.177 DEBUG 60423 --- [main] com.wxhh.easycommunity.MapperTests       : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-14 10:33:59.178  INFO 60423 --- [main] com.wxhh.easycommunity.MapperTests       : No active profile set, falling back to default profiles: default
+2020-04-14 10:34:00.810  INFO 60423 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-14 10:34:01.529  INFO 60423 --- [main] com.wxhh.easycommunity.MapperTests       : Started MapperTests in 2.983 seconds (JVM running for 4.742)
+2020-04-14 10:34:01.952  INFO 60423 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-14 10:34:02.182  INFO 60423 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-14 10:34:02.195 DEBUG 60423 --- [main] c.w.e.dao.UserMapper.selectById          : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where id = ? 
+2020-04-14 10:34:02.252 DEBUG 60423 --- [main] c.w.e.dao.UserMapper.selectById          : ==> Parameters: 101(Integer)
+2020-04-14 10:34:02.290 DEBUG 60423 --- [main] c.w.e.dao.UserMapper.selectById          : <==      Total: 1
+2020-04-14 10:34:02.314 DEBUG 60423 --- [main] c.w.e.dao.UserMapper.selectByName        : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where username = ? 
+2020-04-14 10:34:02.314 DEBUG 60423 --- [main] c.w.e.dao.UserMapper.selectByName        : ==> Parameters: liubei(String)
+2020-04-14 10:34:02.315 DEBUG 60423 --- [main] c.w.e.dao.UserMapper.selectByName        : <==      Total: 1
+2020-04-14 10:34:02.316 DEBUG 60423 --- [main] c.w.e.dao.UserMapper.selectByEmail       : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where email = ? 
+2020-04-14 10:34:02.316 DEBUG 60423 --- [main] c.w.e.dao.UserMapper.selectByEmail       : ==> Parameters: nowcoder101@sina.com(String)
+2020-04-14 10:34:02.318 DEBUG 60423 --- [main] c.w.e.dao.UserMapper.selectByEmail       : <==      Total: 1
+2020-04-14 10:34:02.343  INFO 60423 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-14 10:34:02.357  INFO 60423 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-14 10:34:02.358  INFO 60423 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-14 10:34:08.370  INFO 60460 --- [main] com.wxhh.easycommunity.MapperTests       : Starting MapperTests on macdeMacBook-Pro.local with PID 60460 (started by szw in /Users/szw/Downloads/easycommunity)
+2020-04-14 10:34:08.371 DEBUG 60460 --- [main] com.wxhh.easycommunity.MapperTests       : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-14 10:34:08.371  INFO 60460 --- [main] com.wxhh.easycommunity.MapperTests       : No active profile set, falling back to default profiles: default
+2020-04-14 10:34:09.665  INFO 60460 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-14 10:34:10.219  INFO 60460 --- [main] com.wxhh.easycommunity.MapperTests       : Started MapperTests in 2.166 seconds (JVM running for 3.223)
+2020-04-14 10:34:10.547  INFO 60460 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-14 10:34:10.709  INFO 60460 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-14 10:34:10.721 DEBUG 60460 --- [main] c.w.e.dao.UserMapper.selectById          : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where id = ? 
+2020-04-14 10:34:10.765 DEBUG 60460 --- [main] c.w.e.dao.UserMapper.selectById          : ==> Parameters: 101(Integer)
+2020-04-14 10:34:10.802 DEBUG 60460 --- [main] c.w.e.dao.UserMapper.selectById          : <==      Total: 1
+2020-04-14 10:34:10.824 DEBUG 60460 --- [main] c.w.e.dao.UserMapper.selectByName        : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where username = ? 
+2020-04-14 10:34:10.825 DEBUG 60460 --- [main] c.w.e.dao.UserMapper.selectByName        : ==> Parameters: liubei(String)
+2020-04-14 10:34:10.826 DEBUG 60460 --- [main] c.w.e.dao.UserMapper.selectByName        : <==      Total: 1
+2020-04-14 10:34:10.827 DEBUG 60460 --- [main] c.w.e.dao.UserMapper.selectByEmail       : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where email = ? 
+2020-04-14 10:34:10.827 DEBUG 60460 --- [main] c.w.e.dao.UserMapper.selectByEmail       : ==> Parameters: nowcoder101@sina.com(String)
+2020-04-14 10:34:10.828 DEBUG 60460 --- [main] c.w.e.dao.UserMapper.selectByEmail       : <==      Total: 1
+2020-04-14 10:34:10.847  INFO 60460 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-14 10:34:10.858  INFO 60460 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-14 10:34:10.859  INFO 60460 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-14 10:34:32.365  INFO 60551 --- [main] com.wxhh.easycommunity.MapperTests       : Starting MapperTests on macdeMacBook-Pro.local with PID 60551 (started by szw in /Users/szw/Downloads/easycommunity)
+2020-04-14 10:34:32.366 DEBUG 60551 --- [main] com.wxhh.easycommunity.MapperTests       : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-14 10:34:32.367  INFO 60551 --- [main] com.wxhh.easycommunity.MapperTests       : No active profile set, falling back to default profiles: default
+2020-04-14 10:34:33.608  INFO 60551 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-14 10:34:34.089  INFO 60551 --- [main] com.wxhh.easycommunity.MapperTests       : Started MapperTests in 2.018 seconds (JVM running for 2.905)
+2020-04-14 10:34:34.390  INFO 60551 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-14 10:34:34.532  INFO 60551 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-14 10:34:34.541 DEBUG 60551 --- [main] c.w.e.dao.UserMapper.selectById          : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where id = ? 
+2020-04-14 10:34:34.577 DEBUG 60551 --- [main] c.w.e.dao.UserMapper.selectById          : ==> Parameters: 101(Integer)
+2020-04-14 10:34:34.610 DEBUG 60551 --- [main] c.w.e.dao.UserMapper.selectById          : <==      Total: 1
+2020-04-14 10:34:34.629 DEBUG 60551 --- [main] c.w.e.dao.UserMapper.selectByName        : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where username = ? 
+2020-04-14 10:34:34.629 DEBUG 60551 --- [main] c.w.e.dao.UserMapper.selectByName        : ==> Parameters: liubei(String)
+2020-04-14 10:34:34.630 DEBUG 60551 --- [main] c.w.e.dao.UserMapper.selectByName        : <==      Total: 1
+2020-04-14 10:34:34.631 DEBUG 60551 --- [main] c.w.e.dao.UserMapper.selectByEmail       : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where email = ? 
+2020-04-14 10:34:34.631 DEBUG 60551 --- [main] c.w.e.dao.UserMapper.selectByEmail       : ==> Parameters: nowcoder101@sina.com(String)
+2020-04-14 10:34:34.632 DEBUG 60551 --- [main] c.w.e.dao.UserMapper.selectByEmail       : <==      Total: 1
+2020-04-14 10:34:34.651  INFO 60551 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-14 10:34:34.665  INFO 60551 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-14 10:34:34.665  INFO 60551 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-14 10:44:00.523  INFO 62330 --- [main] com.wxhh.easycommunity.MapperTests       : Starting MapperTests on macdeMacBook-Pro.local with PID 62330 (started by szw in /Users/szw/Downloads/easycommunity)
+2020-04-14 10:44:00.524 DEBUG 62330 --- [main] com.wxhh.easycommunity.MapperTests       : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-14 10:44:00.525  INFO 62330 --- [main] com.wxhh.easycommunity.MapperTests       : No active profile set, falling back to default profiles: default
+2020-04-14 10:44:02.328  INFO 62330 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-14 10:44:03.102  INFO 62330 --- [main] com.wxhh.easycommunity.MapperTests       : Started MapperTests in 2.947 seconds (JVM running for 4.649)
+2020-04-14 10:44:03.518  INFO 62330 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-14 10:44:03.727  INFO 62330 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-14 10:44:03.742 DEBUG 62330 --- [main] c.w.e.dao.UserMapper.selectById          : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where id = ? 
+2020-04-14 10:44:03.783 DEBUG 62330 --- [main] c.w.e.dao.UserMapper.selectById          : ==> Parameters: 101(Integer)
+2020-04-14 10:44:03.821 DEBUG 62330 --- [main] c.w.e.dao.UserMapper.selectById          : <==      Total: 1
+2020-04-14 10:44:03.862 DEBUG 62330 --- [main] c.w.e.dao.UserMapper.selectByName        : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where username = ? 
+2020-04-14 10:44:03.863 DEBUG 62330 --- [main] c.w.e.dao.UserMapper.selectByName        : ==> Parameters: liubei(String)
+2020-04-14 10:44:03.864 DEBUG 62330 --- [main] c.w.e.dao.UserMapper.selectByName        : <==      Total: 1
+2020-04-14 10:44:14.379 DEBUG 62330 --- [main] c.w.e.dao.UserMapper.selectByEmail       : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where email = ? 
+2020-04-14 10:44:14.379 DEBUG 62330 --- [main] c.w.e.dao.UserMapper.selectByEmail       : ==> Parameters: nowcoder101@sina.com(String)
+2020-04-14 10:44:14.382 DEBUG 62330 --- [main] c.w.e.dao.UserMapper.selectByEmail       : <==      Total: 1
+2020-04-14 10:44:14.424  INFO 62330 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-14 10:44:14.449  INFO 62330 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-14 10:44:14.449  INFO 62330 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-14 10:51:47.458  INFO 63843 --- [restartedMain] c.w.e.EasycommunityApplication           : Starting EasycommunityApplication on macdeMacBook-Pro.local with PID 63843 (/Users/szw/Downloads/easycommunity/target/classes started by szw in /Users/szw/Downloads/easycommunity)
+2020-04-14 10:51:47.462 DEBUG 63843 --- [restartedMain] c.w.e.EasycommunityApplication           : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-14 10:51:47.463  INFO 63843 --- [restartedMain] c.w.e.EasycommunityApplication           : No active profile set, falling back to default profiles: default
+2020-04-14 10:51:47.539  INFO 63843 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-14 10:51:47.539  INFO 63843 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-14 10:51:48.650  INFO 63843 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-14 10:51:48.657  INFO 63843 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-14 10:51:48.658  INFO 63843 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-14 10:51:48.709  INFO 63843 --- [restartedMain] o.a.c.c.C.[.[localhost].[/community]     : Initializing Spring embedded WebApplicationContext
+2020-04-14 10:51:48.709  INFO 63843 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1169 ms
+2020-04-14 10:51:48.938  INFO 63843 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-14 10:51:49.295  INFO 63843 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-14 10:51:49.356  INFO 63843 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/community'
+2020-04-14 10:51:49.360  INFO 63843 --- [restartedMain] c.w.e.EasycommunityApplication           : Started EasycommunityApplication in 2.478 seconds (JVM running for 3.244)
+2020-04-14 10:52:01.423  INFO 63843 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/community]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-14 10:52:01.424  INFO 63843 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-14 10:52:01.431  INFO 63843 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-04-14 11:02:05.319  INFO 65785 --- [main] com.wxhh.easycommunity.LoggerTest        : Starting LoggerTest on macdeMacBook-Pro.local with PID 65785 (started by szw in /Users/szw/Downloads/easycommunity)
+2020-04-14 11:02:05.320 DEBUG 65785 --- [main] com.wxhh.easycommunity.LoggerTest        : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-14 11:02:05.321  INFO 65785 --- [main] com.wxhh.easycommunity.LoggerTest        : No active profile set, falling back to default profiles: default
+2020-04-14 11:02:06.878  INFO 65785 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-14 11:02:07.591  INFO 65785 --- [main] com.wxhh.easycommunity.LoggerTest        : Started LoggerTest in 2.744 seconds (JVM running for 3.791)
+2020-04-14 11:02:07.957 DEBUG 65785 --- [main] com.wxhh.easycommunity.LoggerTest        : debug log
+2020-04-14 11:02:07.957  INFO 65785 --- [main] com.wxhh.easycommunity.LoggerTest        : info log
+2020-04-14 11:02:07.957  WARN 65785 --- [main] com.wxhh.easycommunity.LoggerTest        : warn log
+2020-04-14 11:02:07.957 ERROR 65785 --- [main] com.wxhh.easycommunity.LoggerTest        : error log
+2020-04-14 11:02:07.980  INFO 65785 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-14 11:03:13.682  INFO 63843 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
