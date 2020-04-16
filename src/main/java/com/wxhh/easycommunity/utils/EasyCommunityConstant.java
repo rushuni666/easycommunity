@@ -8,4 +8,9 @@ public interface EasyCommunityConstant {
     int ACTIVATION_REPEAT = 1;
     // 激活失败
     int ACTIVATION_FAILURE = 2;
+    // 默认12小时过期
+    int DEFAULT_EXPIRED_SECONDS = 3600 * 12;
+    // 记住我就7天
+    int REMEMBER_EXPIRED_SECONDS = 3600 * 24 * 7;
+
 }
