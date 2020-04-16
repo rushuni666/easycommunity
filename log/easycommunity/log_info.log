@@ -330,3 +330,279 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2020-04-16 11:16:49,123 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 7 ms
 2020-04-16 11:16:49,152 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
 2020-04-16 11:16:49,247 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2020-04-16 11:22:23,476 INFO [Thread-5] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-16 11:22:23,477 INFO [Thread-5] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2020-04-16 11:22:23,485 INFO [Thread-5] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2020-04-16 11:22:23,790 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:55] Starting EasycommunityApplication on macdeMacBook-Pro.local with PID 82113 (/Users/szw/Downloads/easycommunity/target/classes started by szw in /Users/szw/Downloads/easycommunity)
+2020-04-16 11:22:23,791 INFO [restartedMain] c.w.e.EasycommunityApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-04-16 11:22:24,737 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2020-04-16 11:22:24,738 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-16 11:22:24,738 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-04-16 11:22:24,739 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-16 11:22:24,756 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-04-16 11:22:24,756 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 961 ms
+2020-04-16 11:22:25,060 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-16 11:22:25,085 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-04-16 11:22:25,134 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2020-04-16 11:22:25,149 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-04-16 11:22:25,152 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2020-04-16 11:22:25,152 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:61] Started EasycommunityApplication in 1.604 seconds (JVM running for 344.744)
+2020-04-16 11:22:25,154 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
+2020-04-16 11:27:04,687 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-16 11:27:04,688 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-04-16 11:27:04,691 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 3 ms
+2020-04-16 11:27:04,694 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-2 - Starting...
+2020-04-16 11:27:04,699 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-2 - Start completed.
+2020-04-16 11:29:59,186 INFO [Thread-8] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-16 11:29:59,187 INFO [Thread-8] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-2 - Shutdown initiated...
+2020-04-16 11:29:59,189 INFO [Thread-8] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-2 - Shutdown completed.
+2020-04-16 11:29:59,433 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:55] Starting EasycommunityApplication on macdeMacBook-Pro.local with PID 82113 (/Users/szw/Downloads/easycommunity/target/classes started by szw in /Users/szw/Downloads/easycommunity)
+2020-04-16 11:29:59,434 INFO [restartedMain] c.w.e.EasycommunityApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-04-16 11:29:59,737 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2020-04-16 11:29:59,739 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-16 11:29:59,739 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-04-16 11:29:59,739 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-16 11:29:59,768 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-04-16 11:29:59,768 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 332 ms
+2020-04-16 11:29:59,922 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-16 11:29:59,938 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-04-16 11:30:00,006 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2020-04-16 11:30:00,026 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-04-16 11:30:00,028 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2020-04-16 11:30:00,029 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:61] Started EasycommunityApplication in 0.795 seconds (JVM running for 799.617)
+2020-04-16 11:30:00,030 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
+2020-04-16 11:31:34,399 INFO [Thread-13] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-16 11:31:34,469 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:55] Starting EasycommunityApplication on macdeMacBook-Pro.local with PID 82113 (/Users/szw/Downloads/easycommunity/target/classes started by szw in /Users/szw/Downloads/easycommunity)
+2020-04-16 11:31:34,470 INFO [restartedMain] c.w.e.EasycommunityApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-04-16 11:31:34,712 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2020-04-16 11:31:34,713 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-16 11:31:34,714 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-04-16 11:31:34,716 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-16 11:31:34,731 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-04-16 11:31:34,731 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 260 ms
+2020-04-16 11:31:34,745 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2020-04-16 11:31:34,752 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-16 11:32:02,697 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:55] Starting EasycommunityApplication on macdeMacBook-Pro.local with PID 82113 (/Users/szw/Downloads/easycommunity/target/classes started by szw in /Users/szw/Downloads/easycommunity)
+2020-04-16 11:32:02,697 INFO [restartedMain] c.w.e.EasycommunityApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-04-16 11:32:02,851 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2020-04-16 11:32:02,852 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-16 11:32:02,852 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-04-16 11:32:02,852 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-16 11:32:02,863 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-04-16 11:32:02,863 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 165 ms
+2020-04-16 11:32:03,028 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-16 11:32:03,048 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-04-16 11:32:03,093 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2020-04-16 11:32:03,106 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-04-16 11:32:03,108 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2020-04-16 11:32:03,108 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:61] Started EasycommunityApplication in 0.65 seconds (JVM running for 922.697)
+2020-04-16 11:32:03,109 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
+2020-04-16 11:32:34,267 INFO [Thread-18] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-16 11:32:34,332 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:55] Starting EasycommunityApplication on macdeMacBook-Pro.local with PID 82113 (/Users/szw/Downloads/easycommunity/target/classes started by szw in /Users/szw/Downloads/easycommunity)
+2020-04-16 11:32:34,332 INFO [restartedMain] c.w.e.EasycommunityApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-04-16 11:32:34,595 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2020-04-16 11:32:34,596 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-16 11:32:34,596 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-04-16 11:32:34,596 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-16 11:32:34,608 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-04-16 11:32:34,609 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 275 ms
+2020-04-16 11:32:34,753 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-16 11:32:34,766 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-04-16 11:32:34,796 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2020-04-16 11:32:34,808 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-04-16 11:32:34,811 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2020-04-16 11:32:34,811 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:61] Started EasycommunityApplication in 0.499 seconds (JVM running for 954.399)
+2020-04-16 11:32:34,812 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
+2020-04-16 11:33:57,143 INFO [Thread-26] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-16 11:33:57,214 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:55] Starting EasycommunityApplication on macdeMacBook-Pro.local with PID 82113 (/Users/szw/Downloads/easycommunity/target/classes started by szw in /Users/szw/Downloads/easycommunity)
+2020-04-16 11:33:57,215 INFO [restartedMain] c.w.e.EasycommunityApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-04-16 11:33:57,422 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2020-04-16 11:33:57,422 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-16 11:33:57,423 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-04-16 11:33:57,423 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-16 11:33:57,434 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-04-16 11:33:57,434 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 218 ms
+2020-04-16 11:33:57,548 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-16 11:33:57,560 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-04-16 11:33:57,593 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2020-04-16 11:33:57,605 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-04-16 11:33:57,607 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2020-04-16 11:33:57,607 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:61] Started EasycommunityApplication in 0.414 seconds (JVM running for 1037.194)
+2020-04-16 11:33:57,608 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
+2020-04-16 11:34:56,692 INFO [Thread-31] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-16 11:34:56,758 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:55] Starting EasycommunityApplication on macdeMacBook-Pro.local with PID 82113 (/Users/szw/Downloads/easycommunity/target/classes started by szw in /Users/szw/Downloads/easycommunity)
+2020-04-16 11:34:56,758 INFO [restartedMain] c.w.e.EasycommunityApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-04-16 11:34:57,028 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2020-04-16 11:34:57,029 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-16 11:34:57,029 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-04-16 11:34:57,030 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-16 11:34:57,049 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-04-16 11:34:57,050 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 290 ms
+2020-04-16 11:34:57,146 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2020-04-16 11:34:57,152 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-16 11:35:49,153 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:55] Starting EasycommunityApplication on macdeMacBook-Pro.local with PID 82113 (/Users/szw/Downloads/easycommunity/target/classes started by szw in /Users/szw/Downloads/easycommunity)
+2020-04-16 11:35:49,153 INFO [restartedMain] c.w.e.EasycommunityApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-04-16 11:35:49,299 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2020-04-16 11:35:49,300 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-16 11:35:49,300 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-04-16 11:35:49,300 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-16 11:35:49,306 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-04-16 11:35:49,307 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 153 ms
+2020-04-16 11:35:49,369 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2020-04-16 11:35:49,376 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-16 11:36:32,884 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:55] Starting EasycommunityApplication on macdeMacBook-Pro.local with PID 82113 (/Users/szw/Downloads/easycommunity/target/classes started by szw in /Users/szw/Downloads/easycommunity)
+2020-04-16 11:36:32,885 INFO [restartedMain] c.w.e.EasycommunityApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-04-16 11:36:33,054 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2020-04-16 11:36:33,054 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-16 11:36:33,055 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-04-16 11:36:33,055 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-16 11:36:33,062 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-04-16 11:36:33,062 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 176 ms
+2020-04-16 11:36:33,238 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-16 11:36:33,266 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-04-16 11:36:33,351 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2020-04-16 11:36:33,384 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-04-16 11:36:33,387 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2020-04-16 11:36:33,389 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:61] Started EasycommunityApplication in 0.714 seconds (JVM running for 1192.976)
+2020-04-16 11:36:33,393 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
+2020-04-16 11:37:49,592 INFO [Thread-36] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-16 11:37:49,655 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:55] Starting EasycommunityApplication on macdeMacBook-Pro.local with PID 82113 (/Users/szw/Downloads/easycommunity/target/classes started by szw in /Users/szw/Downloads/easycommunity)
+2020-04-16 11:37:49,655 INFO [restartedMain] c.w.e.EasycommunityApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-04-16 11:37:49,878 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2020-04-16 11:37:49,879 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-16 11:37:49,880 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-04-16 11:37:49,880 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-16 11:37:49,889 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-04-16 11:37:49,889 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 233 ms
+2020-04-16 11:37:50,034 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-16 11:37:50,048 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-04-16 11:37:50,084 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2020-04-16 11:37:50,100 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-04-16 11:37:50,102 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2020-04-16 11:37:50,103 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:61] Started EasycommunityApplication in 0.465 seconds (JVM running for 1269.688)
+2020-04-16 11:37:50,106 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
+2020-04-16 11:54:06,147 INFO [Thread-47] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-16 11:54:06,219 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:55] Starting EasycommunityApplication on macdeMacBook-Pro.local with PID 82113 (/Users/szw/Downloads/easycommunity/target/classes started by szw in /Users/szw/Downloads/easycommunity)
+2020-04-16 11:54:06,219 INFO [restartedMain] c.w.e.EasycommunityApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-04-16 11:54:06,457 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2020-04-16 11:54:06,458 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-16 11:54:06,458 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-04-16 11:54:06,458 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-16 11:54:06,469 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-04-16 11:54:06,470 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 249 ms
+2020-04-16 11:54:06,601 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-16 11:54:06,612 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-04-16 11:54:06,649 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2020-04-16 11:54:06,666 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-04-16 11:54:06,668 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2020-04-16 11:54:06,669 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:61] Started EasycommunityApplication in 0.469 seconds (JVM running for 2246.228)
+2020-04-16 11:54:06,670 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
+2020-04-16 11:59:51,992 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-16 12:00:01,798 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:55] Starting EasycommunityApplication on macdeMacBook-Pro.local with PID 90606 (/Users/szw/Downloads/easycommunity/target/classes started by szw in /Users/szw/Downloads/easycommunity)
+2020-04-16 12:00:01,810 INFO [restartedMain] c.w.e.EasycommunityApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-04-16 12:00:01,944 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-16 12:00:01,945 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-16 12:00:03,093 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2020-04-16 12:00:03,101 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-16 12:00:03,102 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-04-16 12:00:03,102 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-16 12:00:03,153 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-04-16 12:00:03,153 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 1207 ms
+2020-04-16 12:00:03,698 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-16 12:00:03,766 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-04-16 12:00:03,874 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2020-04-16 12:00:03,903 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-04-16 12:00:03,933 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2020-04-16 12:00:03,937 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:61] Started EasycommunityApplication in 2.625 seconds (JVM running for 3.481)
+2020-04-16 12:01:35,799 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-16 12:01:35,800 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-04-16 12:01:35,807 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 6 ms
+2020-04-16 12:01:35,830 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2020-04-16 12:01:35,925 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2020-04-16 12:02:47,051 INFO [Thread-5] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-16 12:02:47,052 INFO [Thread-5] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2020-04-16 12:02:47,056 INFO [Thread-5] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2020-04-16 12:02:47,354 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:55] Starting EasycommunityApplication on macdeMacBook-Pro.local with PID 90606 (/Users/szw/Downloads/easycommunity/target/classes started by szw in /Users/szw/Downloads/easycommunity)
+2020-04-16 12:02:47,354 INFO [restartedMain] c.w.e.EasycommunityApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-04-16 12:02:47,589 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2020-04-16 12:02:47,591 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-16 12:02:47,592 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-04-16 12:02:47,593 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-16 12:02:47,609 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-04-16 12:02:47,610 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 254 ms
+2020-04-16 12:02:47,754 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-16 12:02:47,767 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-04-16 12:02:47,815 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2020-04-16 12:02:47,841 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-04-16 12:02:47,844 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2020-04-16 12:02:47,845 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:61] Started EasycommunityApplication in 0.731 seconds (JVM running for 167.388)
+2020-04-16 12:02:47,850 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
+2020-04-16 12:03:59,172 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-16 12:04:03,719 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:55] Starting EasycommunityApplication on macdeMacBook-Pro.local with PID 91410 (/Users/szw/Downloads/easycommunity/target/classes started by szw in /Users/szw/Downloads/easycommunity)
+2020-04-16 12:04:03,721 INFO [restartedMain] c.w.e.EasycommunityApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-04-16 12:04:03,748 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-16 12:04:03,748 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-16 12:04:04,662 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2020-04-16 12:04:04,669 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-16 12:04:04,669 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-04-16 12:04:04,669 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-16 12:04:04,723 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-04-16 12:04:04,723 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 974 ms
+2020-04-16 12:04:05,081 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2020-04-16 12:04:05,093 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-16 12:05:02,508 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:55] Starting EasycommunityApplication on macdeMacBook-Pro.local with PID 91606 (/Users/szw/Downloads/easycommunity/target/classes started by szw in /Users/szw/Downloads/easycommunity)
+2020-04-16 12:05:02,511 INFO [restartedMain] c.w.e.EasycommunityApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-04-16 12:05:02,537 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-16 12:05:02,537 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-16 12:05:03,420 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2020-04-16 12:05:03,427 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-16 12:05:03,427 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-04-16 12:05:03,427 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-16 12:05:03,473 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-04-16 12:05:03,473 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 936 ms
+2020-04-16 12:05:03,925 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-16 12:05:03,978 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-04-16 12:05:04,085 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2020-04-16 12:05:04,114 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-04-16 12:05:04,144 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2020-04-16 12:05:04,148 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:61] Started EasycommunityApplication in 1.877 seconds (JVM running for 2.573)
+2020-04-16 12:05:09,503 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-16 12:05:09,503 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-04-16 12:05:09,509 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 5 ms
+2020-04-16 12:05:09,532 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2020-04-16 12:05:09,623 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2020-04-16 12:06:49,729 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-16 12:06:49,730 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2020-04-16 12:06:49,738 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2020-04-16 12:06:52,318 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:55] Starting EasycommunityApplication on macdeMacBook-Pro.local with PID 91964 (/Users/szw/Downloads/easycommunity/target/classes started by szw in /Users/szw/Downloads/easycommunity)
+2020-04-16 12:06:52,321 INFO [restartedMain] c.w.e.EasycommunityApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-04-16 12:06:52,349 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-16 12:06:52,350 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-16 12:06:53,255 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2020-04-16 12:06:53,263 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-16 12:06:53,263 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-04-16 12:06:53,263 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-16 12:06:53,314 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-04-16 12:06:53,314 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 964 ms
+2020-04-16 12:06:53,831 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-16 12:06:53,887 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-04-16 12:06:53,989 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2020-04-16 12:06:54,014 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-04-16 12:06:54,044 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2020-04-16 12:06:54,049 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:61] Started EasycommunityApplication in 1.995 seconds (JVM running for 2.61)
+2020-04-16 12:06:58,746 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-16 12:06:58,747 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-04-16 12:06:58,751 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 4 ms
+2020-04-16 12:06:58,770 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2020-04-16 12:06:58,854 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2020-04-16 12:08:59,182 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-16 12:08:59,184 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2020-04-16 12:08:59,192 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
