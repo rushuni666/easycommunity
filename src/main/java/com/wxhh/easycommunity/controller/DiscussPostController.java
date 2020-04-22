@@ -7,6 +7,7 @@ import com.wxhh.easycommunity.entity.Page;
 import com.wxhh.easycommunity.entity.User;
 import com.wxhh.easycommunity.service.CommentService;
 import com.wxhh.easycommunity.service.DiscussPostService;
+import com.wxhh.easycommunity.service.LikeService;
 import com.wxhh.easycommunity.service.UserService;
 import com.wxhh.easycommunity.utils.EasyCommunityConstant;
 import com.wxhh.easycommunity.utils.EasyCommunityUtil;
@@ -37,6 +38,9 @@ public class DiscussPostController implements EasyCommunityConstant {
     @Autowired
     private CommentService commentService;
 
+    @Autowired
+    private LikeService likeService;
+
 
     @RequestMapping(path = "/add", method = RequestMethod.POST)
     @ResponseBody
@@ -65,6 +69,12 @@ public class DiscussPostController implements EasyCommunityConstant {
         // 作者
         User user = userService.findUserById(post.getUserId());
         model.addAttribute("user", user);
+        // 点赞
+        long likeCount = likeService.findEntityLikeCount(ENTITY_TYPE_POST, discussPostId);
+        model.addAttribute("likeCount", likeCount);
+        // 点赞状态
+        int likeStatus = hostHolder.getUser() == null ? 0 : likeService.findEntityLikeStatus(hostHolder.getUser().getId(), ENTITY_TYPE_POST, discussPostId);
+        model.addAttribute("LikeStatus", likeStatus);
 
         // 评论分页信息
         page.setLimit(5);
@@ -86,6 +96,12 @@ public class DiscussPostController implements EasyCommunityConstant {
                 commentVo.put("comment", comment);
                 // 作者
                 commentVo.put("user", userService.findUserById(comment.getUserId()));
+                // 点赞
+                likeCount = likeService.findEntityLikeCount(ENTITY_TYPE_COMMENT, comment.getId());
+                commentVo.put("likeCount", likeCount);
+                // 点赞状态
+                likeStatus = hostHolder.getUser() == null ? 0 : likeService.findEntityLikeStatus(hostHolder.getUser().getId(), ENTITY_TYPE_COMMENT, comment.getId());
+                commentVo.put("likeStatus", likeCount);
 
                 // 回复列表
                 List<Comment> replyList = commentService.findCommentsByEntity(
@@ -101,6 +117,12 @@ public class DiscussPostController implements EasyCommunityConstant {
                         replyVo.put("user", userService.findUserById(reply.getUserId()));
                         // 回复目标
                         User target = reply.getTargetId() == 0 ? null : userService.findUserById(reply.getTargetId());
+                        // 点赞
+                        likeCount = likeService.findEntityLikeCount(ENTITY_TYPE_COMMENT, reply.getId());
+                        replyVo.put("likeCount", likeCount);
+                        // 点赞状态
+                        likeStatus = hostHolder.getUser() == null ? 0 : likeService.findEntityLikeStatus(hostHolder.getUser().getId(), ENTITY_TYPE_COMMENT, reply.getId());
+                        replyVo.put("likeStatus", likeCount);
                         replyVo.put("target", target);
 
                         replyVoList.add(replyVo);

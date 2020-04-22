@@ -3,10 +3,9 @@ package com.wxhh.easycommunity.dao;
 
 import com.wxhh.easycommunity.entity.LoginTicket;
 import org.apache.ibatis.annotations.*;
-import org.springframework.stereotype.Component;
 
 @Mapper
-@Component
+@Deprecated
 public interface LoginTicketMapper {
 
     @Insert({"insert into login_ticket(user_id, ticket, status, expired) ",

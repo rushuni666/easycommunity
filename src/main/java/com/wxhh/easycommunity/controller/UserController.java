@@ -2,7 +2,10 @@ package com.wxhh.easycommunity.controller;
 
 import com.wxhh.easycommunity.annotation.LoginRequired;
 import com.wxhh.easycommunity.entity.User;
+import com.wxhh.easycommunity.service.FollowService;
+import com.wxhh.easycommunity.service.LikeService;
 import com.wxhh.easycommunity.service.UserService;
+import com.wxhh.easycommunity.utils.EasyCommunityConstant;
 import com.wxhh.easycommunity.utils.EasyCommunityUtil;
 import com.wxhh.easycommunity.utils.HostHolder;
 import org.apache.commons.lang3.StringUtils;
@@ -25,14 +28,14 @@ import java.io.OutputStream;
 
 @Controller
 @RequestMapping("/user")
-public class UserController {
+public class UserController implements EasyCommunityConstant {
 
     private static final Logger logger = LoggerFactory.getLogger(UserController.class);
 
-    @Value("${easy-community.path.upload}")
+    @Value("${easycommunity.path.upload}")
     private String uploadPath;
 
-    @Value("${easy-community.path.domain}")
+    @Value("${easycommunity.path.domain}")
     private String domain;
 
     @Value("${server.servlet.context-path}")
@@ -43,6 +46,12 @@ public class UserController {
 
     @Autowired
     private HostHolder hostHolder;
+
+    @Autowired
+    private LikeService likeService;
+
+    @Autowired
+    private FollowService followService;
 
     @LoginRequired
     @RequestMapping(path = "/setting", method = RequestMethod.GET)
@@ -108,26 +117,37 @@ public class UserController {
         }
     }
 
+    // 个人主页
+    @RequestMapping(path = "/profile/{userId}", method = RequestMethod.GET)
+    public String getProfilePage(@PathVariable("userId") int userId, Model model) {
+        User user = userService.findUserById(userId);
+        if (user == null) {
+            throw new RuntimeException("该用户不存在!");
+        }
+
+        // 用户
+        model.addAttribute("user", user);
+        // 点赞数量
+        int likeCount = likeService.findUserLikeCount(userId);
+        model.addAttribute("likeCount", likeCount);
+
+        // 关注数量
+        long followeeCount = followService.findFolloweeCount(userId, ENTITY_TYPE_USER);
+        model.addAttribute("followeeCount", followeeCount);
+        // 粉丝数量
+        long followerCount = followService.findFollowerCount(ENTITY_TYPE_USER, userId);
+        model.addAttribute("followerCount", followerCount);
+        // 是否已关注
+        boolean hasFollowed = false;
+        if (hostHolder.getUser() != null) {
+            hasFollowed = followService.hasFollowed(hostHolder.getUser().getId(), ENTITY_TYPE_USER, userId);
+        }
+        model.addAttribute("hasFollowed", hasFollowed);
+
+        return "/site/profile";
+    }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
