@@ -1,7 +1,10 @@
 package com.wxhh.easycommunity.controller;
 
+import com.wxhh.easycommunity.entity.Event;
 import com.wxhh.easycommunity.entity.User;
+import com.wxhh.easycommunity.event.EventProducer;
 import com.wxhh.easycommunity.service.LikeService;
+import com.wxhh.easycommunity.utils.EasyCommunityConstant;
 import com.wxhh.easycommunity.utils.EasyCommunityUtil;
 import com.wxhh.easycommunity.utils.HostHolder;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +17,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Controller
-public class LikeController {
+public class LikeController implements EasyCommunityConstant {
 
     @Autowired
     private LikeService likeService;
@@ -22,9 +25,12 @@ public class LikeController {
     @Autowired
     private HostHolder hostHolder;
 
+    @Autowired
+    private EventProducer eventProducer;
+
     @RequestMapping(path = "/like", method = RequestMethod.POST)
     @ResponseBody
-    public String like(int entityType, int entityId, int entityUserId) {
+    public String like(int entityType, int entityId, int entityUserId, int postId) {
         User user = hostHolder.getUser();
 
         // 点赞
@@ -38,6 +44,18 @@ public class LikeController {
         Map<String, Object> map = new HashMap<>();
         map.put("likeCount", likeCount);
         map.put("likeStatus", likeStatus);
+
+        // 触发点赞事件
+        if (likeStatus == 1) {
+            Event event = new Event()
+                    .setTopic(TOPIC_LIKE)
+                    .setUserId(hostHolder.getUser().getId())
+                    .setEntityType(entityType)
+                    .setEntityId(entityId)
+                    .setEntityUserId(entityUserId)
+                    .setData("postId", postId);
+            eventProducer.fireEvent(event);
+        }
 
         return EasyCommunityUtil.getJSONString(0, null, map);
     }

@@ -1,7 +1,9 @@
 package com.wxhh.easycommunity.controller;
 
+import com.wxhh.easycommunity.entity.Event;
 import com.wxhh.easycommunity.entity.Page;
 import com.wxhh.easycommunity.entity.User;
+import com.wxhh.easycommunity.event.EventProducer;
 import com.wxhh.easycommunity.service.FollowService;
 import com.wxhh.easycommunity.service.UserService;
 import com.wxhh.easycommunity.utils.EasyCommunityConstant;
@@ -30,12 +32,25 @@ public class FollowController implements EasyCommunityConstant {
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private EventProducer eventProducer;
+
     @RequestMapping(path = "/follow", method = RequestMethod.POST)
     @ResponseBody
     public String follow(int entityType, int entityId) {
         User user = hostHolder.getUser();
 
         followService.follow(user.getId(), entityType, entityId);
+
+        // 触发关注事件
+        Event event = new Event()
+                .setTopic(TOPIC_FOLLOW)
+                .setUserId(hostHolder.getUser().getId())
+                .setEntityType(entityType)
+                .setEntityId(entityId)
+                .setEntityUserId(entityId);
+        eventProducer.fireEvent(event);
+
 
         return EasyCommunityUtil.getJSONString(0, "已关注!");
     }
