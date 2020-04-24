@@ -1,8 +1,11 @@
 package com.wxhh.easycommunity.event;
 
 import com.alibaba.fastjson.JSONObject;
+import com.wxhh.easycommunity.entity.DiscussPost;
 import com.wxhh.easycommunity.entity.Event;
 import com.wxhh.easycommunity.entity.Message;
+import com.wxhh.easycommunity.service.DiscussPostService;
+import com.wxhh.easycommunity.service.ElasticsearchService;
 import com.wxhh.easycommunity.service.MessageService;
 import com.wxhh.easycommunity.utils.EasyCommunityConstant;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
@@ -23,6 +26,12 @@ public class EventConsumer implements EasyCommunityConstant {
 
     @Autowired
     private MessageService messageService;
+
+    @Autowired
+    private DiscussPostService discussPostService;
+
+    @Autowired
+    private ElasticsearchService elasticsearchService;
 
     @KafkaListener(topics = {TOPIC_COMMENT, TOPIC_LIKE, TOPIC_FOLLOW})
     public void handleCommentMessage(ConsumerRecord record) {
@@ -57,6 +66,24 @@ public class EventConsumer implements EasyCommunityConstant {
 
         message.setContent(JSONObject.toJSONString(content));
         messageService.addMessage(message);
+    }
+
+    // 消费发帖事件
+    @KafkaListener(topics = {TOPIC_PUBLISH})
+    public void handlePublishMessage(ConsumerRecord record) {
+        if (record == null || record.value() == null) {
+            logger.error("消息的内容为空!");
+            return;
+        }
+
+        Event event = JSONObject.parseObject(record.value().toString(), Event.class);
+        if (event == null) {
+            logger.error("消息格式错误!");
+            return;
+        }
+
+        DiscussPost post = discussPostService.findDiscussPostById(event.getEntityId());
+        elasticsearchService.saveDiscussPost(post);
     }
 }
 

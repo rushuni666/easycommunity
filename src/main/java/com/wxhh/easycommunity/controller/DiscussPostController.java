@@ -1,10 +1,8 @@
 package com.wxhh.easycommunity.controller;
 
 
-import com.wxhh.easycommunity.entity.Comment;
-import com.wxhh.easycommunity.entity.DiscussPost;
-import com.wxhh.easycommunity.entity.Page;
-import com.wxhh.easycommunity.entity.User;
+import com.wxhh.easycommunity.entity.*;
+import com.wxhh.easycommunity.event.EventProducer;
 import com.wxhh.easycommunity.service.CommentService;
 import com.wxhh.easycommunity.service.DiscussPostService;
 import com.wxhh.easycommunity.service.LikeService;
@@ -41,6 +39,8 @@ public class DiscussPostController implements EasyCommunityConstant {
     @Autowired
     private LikeService likeService;
 
+    @Autowired
+    private EventProducer eventProducer;
 
     @RequestMapping(path = "/add", method = RequestMethod.POST)
     @ResponseBody
@@ -56,6 +56,14 @@ public class DiscussPostController implements EasyCommunityConstant {
         post.setContent(content);
         post.setCreateTime(new Date());
         discussPostService.addDiscussPost(post);
+
+        // 触发发帖事件
+        Event event = new Event()
+                .setTopic(TOPIC_PUBLISH)
+                .setUserId(user.getId())
+                .setEntityType(ENTITY_TYPE_POST)
+                .setEntityId(post.getId());
+        eventProducer.fireEvent(event);
 
         // 报错的情况,将来统一处理.
         return EasyCommunityUtil.getJSONString(0, "发布成功!");

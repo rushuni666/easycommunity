@@ -2,14 +2,18 @@ package com.wxhh.easycommunity;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.dao.DataAccessException;
 import org.springframework.data.redis.core.BoundValueOperations;
 import org.springframework.data.redis.core.RedisOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.SessionCallback;
+import org.springframework.test.context.ContextConfiguration;
 
 import java.util.concurrent.TimeUnit;
 
+@SpringBootTest
+@ContextConfiguration(classes = EasycommunityApplication.class)
 public class RedisTests {
 
     @Autowired
@@ -20,7 +24,6 @@ public class RedisTests {
         String redisKey = "test:count";
 
         redisTemplate.opsForValue().set(redisKey, 1);
-
         System.out.println(redisTemplate.opsForValue().get(redisKey));
         System.out.println(redisTemplate.opsForValue().increment(redisKey));
         System.out.println(redisTemplate.opsForValue().decrement(redisKey));
