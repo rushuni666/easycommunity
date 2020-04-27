@@ -439,3 +439,62 @@ Caused by: java.lang.ClassNotFoundException: org.quartz.JobDetail
 2020-04-27 10:56:01,626 WARN [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:558] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commentController' defined in file [/Users/szw/Downloads/easycommunity/target/classes/com/wxhh/easycommunity/controller/CommentController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.wxhh.easycommunity.controller.CommentController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1231b7b5]
 2020-04-27 10:56:07,702 WARN [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:558] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'postScoreRefreshJobDetail' defined in class path resource [com/wxhh/easycommunity/config/QuartzConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.scheduling.quartz.JobDetailFactoryBean]: Factory method 'postScoreRefreshJobDetail' threw exception; nested exception is java.lang.NoClassDefFoundError: com/wxhh/easycommunity/quartz/PostScoreRefreshJob
 2020-04-27 10:56:40,776 WARN [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:558] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'postScoreRefreshJobDetail' defined in class path resource [com/wxhh/easycommunity/config/QuartzConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.scheduling.quartz.JobDetailFactoryBean]: Factory method 'postScoreRefreshJobDetail' threw exception; nested exception is java.lang.NoClassDefFoundError: com/wxhh/easycommunity/quartz/PostScoreRefreshJob
+2020-04-27 12:01:38,428 WARN [restartedMain] o.m.s.m.ClassPathMapperScanner [Logger.java:44] No MyBatis mapper was found in '[com.wxhh.easycommunity]' package. Please check your configuration.
+2020-04-27 12:01:38,680 WARN [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [FFC0513174051251A4A1DFF9D1171BB0]
+2020-04-27 12:07:30,457 WARN [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:558] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commentController' defined in file [/Users/szw/Downloads/easycommunity/target/classes/com/wxhh/easycommunity/controller/CommentController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.wxhh.easycommunity.controller.CommentController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@25217022]
+2020-04-27 12:22:03,965 WARN [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [BD7414C22A629FAFB643E0F21A8D8FE3]
+2020-04-27 12:23:09,475 WARN [RMI TCP Connection(3)-127.0.0.1] o.s.b.a.e.ElasticsearchHealthIndicator [AbstractHealthIndicator.java:87] Elasticsearch health check failed
+org.elasticsearch.ElasticsearchTimeoutException: java.util.concurrent.TimeoutException: Timeout waiting for task.
+	at org.elasticsearch.common.util.concurrent.FutureUtils.get(FutureUtils.java:79)
+	at org.elasticsearch.action.support.AdapterActionFuture.actionGet(AdapterActionFuture.java:54)
+	at org.elasticsearch.action.support.AdapterActionFuture.actionGet(AdapterActionFuture.java:44)
+	at org.springframework.boot.actuate.elasticsearch.ElasticsearchHealthIndicator.doHealthCheck(ElasticsearchHealthIndicator.java:79)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82)
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:81)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:38)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:108)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateHealth(HealthEndpointSupport.java:119)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:105)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:83)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:70)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:75)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:77)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:121)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:96)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1399)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:827)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor71.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.util.concurrent.TimeoutException: Timeout waiting for task.
+	at org.elasticsearch.common.util.concurrent.BaseFuture$Sync.get(BaseFuture.java:235)
+	at org.elasticsearch.common.util.concurrent.BaseFuture.get(BaseFuture.java:69)
+	at org.elasticsearch.common.util.concurrent.FutureUtils.get(FutureUtils.java:77)
+	... 45 common frames omitted
+2020-04-27 12:25:58,064 WARN [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [7AF1FE5B7E71A1F25AE103975FDB9361]
+2020-04-27 12:27:30,521 WARN [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [7AF1FE5B7E71A1F25AE103975FDB9361]

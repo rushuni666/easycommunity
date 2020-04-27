@@ -55,7 +55,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements Easy
                 )
                 .antMatchers(
                         "/discuss/delete",
-                        "/data/..."
+                        "/data/...",
+                        "/actuator/**"
                 )
                 .hasAnyAuthority(
                         AUTHORITY_ADMIN
