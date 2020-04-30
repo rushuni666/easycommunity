@@ -62,7 +62,7 @@ public class LoginController implements EasyCommunityConstant {
         Map<String, Object> map = userService.register(user);
 
         if (map == null || map.isEmpty()) {
-            model.addAttribute("msg", "注册成功，注册邮件已发送，请进尽激活");
+            model.addAttribute("msg", "注册成功，注册邮件已发送，请进尽快激活");
             model.addAttribute("target", "index");
             return "/site/operate-result";
         } else {

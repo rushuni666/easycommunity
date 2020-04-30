@@ -8,11 +8,13 @@
 		<version>2.2.6.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>com.wxhh.easycommunity</groupId>
 	<artifactId>easycommunity</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>easycommunity</name>
 	<description>wxhh easycommunity</description>
+	<packaging>war</packaging>
 
 	<properties>
 		<java.version>11</java.version>
@@ -137,6 +139,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>ROOT</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

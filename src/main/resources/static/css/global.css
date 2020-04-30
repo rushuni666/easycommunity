@@ -20,13 +20,19 @@ body {
 	padding: 0;
 }
 
+header {
+	background-color: #525f8c;
+}
+
 header .navbar-brand {
-	background: url('http://static.nowcoder.com/images/res/logo/logo-v3.png') no-repeat;
+	background: url('https://i.loli.net/2020/04/29/2H6n9kM7lONea1F.png') no-repeat;
 	background-size: 147px 42px;
 	width: 147px;
 	height: 42px;
 	margin: 5px 15px 5px 0;
 }
+
+
 
 header .navbar {
 	padding: 5px 0;
