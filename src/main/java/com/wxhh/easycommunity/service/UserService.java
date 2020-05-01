@@ -93,7 +93,7 @@ public class UserService implements EasyCommunityConstant {
         user.setType(0);
         user.setStatus(0);
         user.setActivationCode(EasyCommunityUtil.generateUUID());
-        String gravatar = "http://www.gravatar.com/avatar/{%d}?s=50&d=retro";
+        String gravatar = "http://www.gravatar.com/avatar/{%d}?s=50&d=robohash";
 //        http://www.gravatar.com/avatar/{23}?s=50&d=retro
         user.setHeaderUrl(String.format(gravatar, new Random().nextInt(1000)));
         user.setCreateTime(new Date());

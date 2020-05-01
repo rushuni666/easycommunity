@@ -1,31 +1,841 @@
-2020-04-30 00:03:27,642 INFO [communityScheduler_Worker-1] c.w.e.q.PostScoreRefreshJob [PostScoreRefreshJob.java:56] [任务取消] 没有需要刷新的帖子!
-2020-04-30 00:08:27,635 INFO [communityScheduler_Worker-2] c.w.e.q.PostScoreRefreshJob [PostScoreRefreshJob.java:56] [任务取消] 没有需要刷新的帖子!
-2020-04-30 00:13:27,639 INFO [communityScheduler_Worker-3] c.w.e.q.PostScoreRefreshJob [PostScoreRefreshJob.java:56] [任务取消] 没有需要刷新的帖子!
-2020-04-30 00:18:27,642 INFO [communityScheduler_Worker-4] c.w.e.q.PostScoreRefreshJob [PostScoreRefreshJob.java:56] [任务取消] 没有需要刷新的帖子!
-2020-04-30 00:23:27,640 INFO [communityScheduler_Worker-5] c.w.e.q.PostScoreRefreshJob [PostScoreRefreshJob.java:56] [任务取消] 没有需要刷新的帖子!
-2020-04-30 00:28:27,639 INFO [communityScheduler_Worker-1] c.w.e.q.PostScoreRefreshJob [PostScoreRefreshJob.java:56] [任务取消] 没有需要刷新的帖子!
-2020-04-30 00:33:27,643 INFO [communityScheduler_Worker-2] c.w.e.q.PostScoreRefreshJob [PostScoreRefreshJob.java:56] [任务取消] 没有需要刷新的帖子!
-2020-04-30 00:38:27,642 INFO [communityScheduler_Worker-3] c.w.e.q.PostScoreRefreshJob [PostScoreRefreshJob.java:56] [任务取消] 没有需要刷新的帖子!
-2020-04-30 00:43:27,648 INFO [communityScheduler_Worker-4] c.w.e.q.PostScoreRefreshJob [PostScoreRefreshJob.java:56] [任务取消] 没有需要刷新的帖子!
-2020-04-30 00:48:27,641 INFO [communityScheduler_Worker-5] c.w.e.q.PostScoreRefreshJob [PostScoreRefreshJob.java:56] [任务取消] 没有需要刷新的帖子!
-2020-04-30 00:53:27,640 INFO [communityScheduler_Worker-1] c.w.e.q.PostScoreRefreshJob [PostScoreRefreshJob.java:56] [任务取消] 没有需要刷新的帖子!
-2020-04-30 00:57:58,844 INFO [SpringContextShutdownHook] o.q.c.QuartzScheduler [QuartzScheduler.java:585] Scheduler communityScheduler_$_macdeMacBook-Pro.local1588164208987 paused.
-2020-04-30 00:57:58,866 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:879] [Consumer clientId=consumer-1, groupId=easycommunity-consumer-group] Member consumer-1-bbb50a90-10f3-4173-ba28-f51ed9595d3e sending LeaveGroup request to coordinator localhost:9092 (id: 2147483647 rack: null)
-2020-04-30 00:57:58,866 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:879] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] Member consumer-3-ee5c803e-3891-49a3-9e50-fbbeee65d971 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483647 rack: null)
-2020-04-30 00:57:58,866 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:879] [Consumer clientId=consumer-2, groupId=easycommunity-consumer-group] Member consumer-2-27d205bc-d54e-4b87-aff2-cea61f5a1b16 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483647 rack: null)
-2020-04-30 00:57:58,870 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:1068] [Consumer clientId=consumer-2, groupId=easycommunity-consumer-group] Unsubscribed all topics or patterns and assigned partitions
-2020-04-30 00:57:58,870 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:1068] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] Unsubscribed all topics or patterns and assigned partitions
-2020-04-30 00:57:58,870 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:1068] [Consumer clientId=consumer-1, groupId=easycommunity-consumer-group] Unsubscribed all topics or patterns and assigned partitions
-2020-04-30 00:57:58,871 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService
-2020-04-30 00:57:58,871 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService
-2020-04-30 00:57:58,871 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService
-2020-04-30 00:57:58,919 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer [LogAccessor.java:279] easycommunity-consumer-group: Consumer stopped
-2020-04-30 00:57:58,927 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer [LogAccessor.java:279] easycommunity-consumer-group: Consumer stopped
-2020-04-30 00:57:58,948 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer [LogAccessor.java:279] easycommunity-consumer-group: Consumer stopped
-2020-04-30 00:57:58,956 INFO [SpringContextShutdownHook] o.s.s.q.SchedulerFactoryBean [SchedulerFactoryBean.java:845] Shutting down Quartz Scheduler
-2020-04-30 00:57:58,956 INFO [SpringContextShutdownHook] o.q.c.QuartzScheduler [QuartzScheduler.java:666] Scheduler communityScheduler_$_macdeMacBook-Pro.local1588164208987 shutting down.
-2020-04-30 00:57:58,956 INFO [SpringContextShutdownHook] o.q.c.QuartzScheduler [QuartzScheduler.java:585] Scheduler communityScheduler_$_macdeMacBook-Pro.local1588164208987 paused.
-2020-04-30 00:57:58,957 INFO [SpringContextShutdownHook] o.q.c.QuartzScheduler [QuartzScheduler.java:740] Scheduler communityScheduler_$_macdeMacBook-Pro.local1588164208987 shutdown complete.
-2020-04-30 00:57:58,978 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
-2020-04-30 00:57:59,113 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2020-04-30 00:57:59,115 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2020-05-01 14:24:07,883 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:55] Starting EasycommunityApplication on macdeMacBook-Pro.local with PID 55420 (/Users/szw/Downloads/easycommunity/target/classes started by szw in /Users/szw/Downloads/easycommunity)
+2020-05-01 14:24:07,886 INFO [restartedMain] c.w.e.EasycommunityApplication [SpringApplication.java:655] The following profiles are active: develop
+2020-05-01 14:24:07,937 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-01 14:24:07,937 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-01 14:24:09,042 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-01 14:24:09,045 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-05-01 14:24:09,133 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 81ms. Found 1 Elasticsearch repository interfaces.
+2020-05-01 14:24:09,141 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-01 14:24:09,142 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-05-01 14:24:09,157 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 13ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-05-01 14:24:09,178 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-01 14:24:09,180 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-01 14:24:09,207 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationExtensionSupport [RepositoryConfigurationExtensionSupport.java:348] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.wxhh.easycommunity.dao.elasticsearch.DiscussPostRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-05-01 14:24:09,208 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2020-05-01 14:24:10,349 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2020-05-01 14:24:10,361 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-01 14:24:10,362 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-05-01 14:24:10,362 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-01 14:24:10,453 INFO [restartedMain] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-05-01 14:24:10,453 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 2516 ms
+2020-05-01 14:24:10,915 INFO [restartedMain] o.e.p.PluginsService [PluginsService.java:197] no modules loaded
+2020-05-01 14:24:10,916 INFO [restartedMain] o.e.p.PluginsService [PluginsService.java:200] loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2020-05-01 14:24:10,916 INFO [restartedMain] o.e.p.PluginsService [PluginsService.java:200] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020-05-01 14:24:10,916 INFO [restartedMain] o.e.p.PluginsService [PluginsService.java:200] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020-05-01 14:24:10,917 INFO [restartedMain] o.e.p.PluginsService [PluginsService.java:200] loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2020-05-01 14:24:10,917 INFO [restartedMain] o.e.p.PluginsService [PluginsService.java:200] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020-05-01 14:24:11,610 INFO [restartedMain] o.s.d.e.c.TransportClientFactoryBean [TransportClientFactoryBean.java:88] Adding transport node : 127.0.0.1:9300
+2020-05-01 14:24:13,526 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2020-05-01 14:24:13,917 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-01 14:24:14,040 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-05-01 14:24:14,432 INFO [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:86] 
+
+Using generated security password: d27f55b1-2286-4654-b64f-39098355737d
+
+2020-05-01 14:24:14,490 INFO [restartedMain] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:43] Creating filter chain: Ant [pattern='/resources/**'], []
+2020-05-01 14:24:14,564 INFO [restartedMain] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16ba683b, org.springframework.security.web.context.SecurityContextPersistenceFilter@66ca0f73, org.springframework.security.web.header.HeaderWriterFilter@da1a970, org.springframework.security.web.authentication.logout.LogoutFilter@f147d66, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@467f651d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49614da2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d6c932c, org.springframework.security.web.session.SessionManagementFilter@183c7577, org.springframework.security.web.access.ExceptionTranslationFilter@52ce3a9a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7a30d5bd]
+2020-05-01 14:24:14,856 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2020-05-01 14:24:14,985 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2020-05-01 14:24:15,066 INFO [restartedMain] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1220] Using default implementation for ThreadExecutor
+2020-05-01 14:24:15,075 INFO [restartedMain] o.q.c.SchedulerSignalerImpl [SchedulerSignalerImpl.java:61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-05-01 14:24:15,076 INFO [restartedMain] o.q.c.QuartzScheduler [QuartzScheduler.java:229] Quartz Scheduler v.2.3.2 created.
+2020-05-01 14:24:15,079 INFO [restartedMain] o.s.s.q.LocalDataSourceJobStore [JobStoreSupport.java:672] Using db table-based data access locking (synchronization).
+2020-05-01 14:24:15,080 INFO [restartedMain] o.s.s.q.LocalDataSourceJobStore [JobStoreCMT.java:145] JobStoreCMT initialized.
+2020-05-01 14:24:15,081 INFO [restartedMain] o.q.c.QuartzScheduler [QuartzScheduler.java:294] Scheduler meta-data: Quartz Scheduler (v2.3.2) 'communityScheduler' with instanceId 'macdeMacBook-Pro.local1588314255068'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2020-05-01 14:24:15,081 INFO [restartedMain] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1374] Quartz scheduler 'communityScheduler' initialized from an externally provided properties instance.
+2020-05-01 14:24:15,081 INFO [restartedMain] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1378] Quartz scheduler version: 2.3.2
+2020-05-01 14:24:15,081 INFO [restartedMain] o.q.c.QuartzScheduler [QuartzScheduler.java:2293] JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@2e21b561
+2020-05-01 14:24:15,173 INFO [restartedMain] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 11 endpoint(s) beneath base path '/actuator'
+2020-05-01 14:24:15,289 INFO [restartedMain] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:347] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = easycommunity-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2020-05-01 14:24:15,353 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:117] Kafka version: 2.3.1
+2020-05-01 14:24:15,354 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:118] Kafka commitId: 18a913733fb71c01
+2020-05-01 14:24:15,354 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka startTimeMs: 1588314255352
+2020-05-01 14:24:15,357 INFO [restartedMain] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:964] [Consumer clientId=consumer-1, groupId=easycommunity-consumer-group] Subscribed to topic(s): delete
+2020-05-01 14:24:15,359 INFO [restartedMain] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:181] Initializing ExecutorService
+2020-05-01 14:24:15,366 INFO [restartedMain] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:347] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = easycommunity-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2020-05-01 14:24:15,382 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:117] Kafka version: 2.3.1
+2020-05-01 14:24:15,382 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:118] Kafka commitId: 18a913733fb71c01
+2020-05-01 14:24:15,383 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka startTimeMs: 1588314255382
+2020-05-01 14:24:15,383 INFO [restartedMain] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:964] [Consumer clientId=consumer-2, groupId=easycommunity-consumer-group] Subscribed to topic(s): publish
+2020-05-01 14:24:15,383 INFO [restartedMain] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:181] Initializing ExecutorService
+2020-05-01 14:24:15,385 INFO [restartedMain] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:347] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = easycommunity-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2020-05-01 14:24:15,399 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:117] Kafka version: 2.3.1
+2020-05-01 14:24:15,399 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:118] Kafka commitId: 18a913733fb71c01
+2020-05-01 14:24:15,399 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka startTimeMs: 1588314255399
+2020-05-01 14:24:15,399 INFO [restartedMain] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:964] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] Subscribed to topic(s): comment, like, follow
+2020-05-01 14:24:15,400 INFO [restartedMain] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:181] Initializing ExecutorService
+2020-05-01 14:24:15,401 INFO [restartedMain] o.s.s.q.SchedulerFactoryBean [SchedulerFactoryBean.java:727] Starting Quartz Scheduler now
+2020-05-01 14:24:15,406 INFO [restartedMain] o.s.s.q.LocalDataSourceJobStore [JobStoreSupport.java:3644] ClusterManager: detected 1 failed or restarted instances.
+2020-05-01 14:24:15,406 INFO [restartedMain] o.s.s.q.LocalDataSourceJobStore [JobStoreSupport.java:3503] ClusterManager: Scanning for instance "macdeMacBook-Pro.local1588313116017"'s failed in-progress jobs.
+2020-05-01 14:24:15,414 INFO [restartedMain] o.q.c.QuartzScheduler [QuartzScheduler.java:547] Scheduler communityScheduler_$_macdeMacBook-Pro.local1588314255068 started.
+2020-05-01 14:24:15,428 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-05-01 14:24:15,445 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-01 14:24:15,449 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:61] Started EasycommunityApplication in 7.979 seconds (JVM running for 8.64)
+2020-05-01 14:24:15,504 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.Metadata [Metadata.java:261] [Consumer clientId=consumer-1, groupId=easycommunity-consumer-group] Cluster ID: 43HdDh_QRGqyXBQPomzHIA
+2020-05-01 14:24:15,504 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.Metadata [Metadata.java:261] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] Cluster ID: 43HdDh_QRGqyXBQPomzHIA
+2020-05-01 14:24:15,504 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.Metadata [Metadata.java:261] [Consumer clientId=consumer-2, groupId=easycommunity-consumer-group] Cluster ID: 43HdDh_QRGqyXBQPomzHIA
+2020-05-01 14:24:15,506 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:728] [Consumer clientId=consumer-1, groupId=easycommunity-consumer-group] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2020-05-01 14:24:15,506 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:728] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2020-05-01 14:24:15,506 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:728] [Consumer clientId=consumer-2, groupId=easycommunity-consumer-group] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2020-05-01 14:24:15,509 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:476] [Consumer clientId=consumer-2, groupId=easycommunity-consumer-group] Revoking previously assigned partitions []
+2020-05-01 14:24:15,509 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:476] [Consumer clientId=consumer-1, groupId=easycommunity-consumer-group] Revoking previously assigned partitions []
+2020-05-01 14:24:15,509 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:476] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] Revoking previously assigned partitions []
+2020-05-01 14:24:15,510 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:279] easycommunity-consumer-group: partitions revoked: []
+2020-05-01 14:24:15,510 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:279] easycommunity-consumer-group: partitions revoked: []
+2020-05-01 14:24:15,510 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:279] easycommunity-consumer-group: partitions revoked: []
+2020-05-01 14:24:15,510 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:505] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] (Re-)joining group
+2020-05-01 14:24:15,510 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:505] [Consumer clientId=consumer-1, groupId=easycommunity-consumer-group] (Re-)joining group
+2020-05-01 14:24:15,510 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:505] [Consumer clientId=consumer-2, groupId=easycommunity-consumer-group] (Re-)joining group
+2020-05-01 14:24:15,519 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:505] [Consumer clientId=consumer-1, groupId=easycommunity-consumer-group] (Re-)joining group
+2020-05-01 14:24:15,519 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:505] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] (Re-)joining group
+2020-05-01 14:24:15,519 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:505] [Consumer clientId=consumer-2, groupId=easycommunity-consumer-group] (Re-)joining group
+2020-05-01 14:24:15,528 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:469] [Consumer clientId=consumer-1, groupId=easycommunity-consumer-group] Successfully joined group with generation 416
+2020-05-01 14:24:15,528 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:469] [Consumer clientId=consumer-2, groupId=easycommunity-consumer-group] Successfully joined group with generation 416
+2020-05-01 14:24:15,528 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:469] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] Successfully joined group with generation 416
+2020-05-01 14:24:15,532 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:283] [Consumer clientId=consumer-2, groupId=easycommunity-consumer-group] Setting newly assigned partitions: publish-0
+2020-05-01 14:24:15,532 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:283] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] Setting newly assigned partitions: comment-0, like-0, follow-0
+2020-05-01 14:24:15,532 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:283] [Consumer clientId=consumer-1, groupId=easycommunity-consumer-group] Setting newly assigned partitions: delete-0
+2020-05-01 14:24:15,538 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:525] [Consumer clientId=consumer-1, groupId=easycommunity-consumer-group] Setting offset for partition delete-0 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 0 rack: null), epoch=0}}
+2020-05-01 14:24:15,538 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:525] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] Setting offset for partition comment-0 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 0 rack: null), epoch=0}}
+2020-05-01 14:24:15,538 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:525] [Consumer clientId=consumer-2, groupId=easycommunity-consumer-group] Setting offset for partition publish-0 to the committed offset FetchPosition{offset=8, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 0 rack: null), epoch=0}}
+2020-05-01 14:24:15,540 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:525] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] Setting offset for partition like-0 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 0 rack: null), epoch=0}}
+2020-05-01 14:24:15,541 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:525] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] Setting offset for partition follow-0 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 0 rack: null), epoch=0}}
+2020-05-01 14:24:15,546 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:279] easycommunity-consumer-group: partitions assigned: [comment-0, like-0, follow-0]
+2020-05-01 14:24:15,546 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:279] easycommunity-consumer-group: partitions assigned: [delete-0]
+2020-05-01 14:24:15,546 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:279] easycommunity-consumer-group: partitions assigned: [publish-0]
+2020-05-01 14:24:15,784 INFO [RMI TCP Connection(5)-127.0.0.1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-01 14:24:15,784 INFO [RMI TCP Connection(5)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-05-01 14:24:15,804 INFO [RMI TCP Connection(5)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 20 ms
+2020-05-01 14:24:20,174 INFO [boundedElastic-1] i.l.c.EpollProvider [Netty4InternalESLogger.java:105] Starting without optional epoll library
+2020-05-01 14:24:20,175 INFO [boundedElastic-1] i.l.c.KqueueProvider [Netty4InternalESLogger.java:105] Starting without optional kqueue library
+2020-05-01 14:28:27,678 INFO [communityScheduler_Worker-1] c.w.e.q.PostScoreRefreshJob [PostScoreRefreshJob.java:56] [任务取消] 没有需要刷新的帖子!
+2020-05-01 14:33:27,644 INFO [communityScheduler_Worker-2] c.w.e.q.PostScoreRefreshJob [PostScoreRefreshJob.java:56] [任务取消] 没有需要刷新的帖子!
+2020-05-01 14:38:27,644 INFO [communityScheduler_Worker-3] c.w.e.q.PostScoreRefreshJob [PostScoreRefreshJob.java:56] [任务取消] 没有需要刷新的帖子!
+2020-05-01 14:43:27,643 INFO [communityScheduler_Worker-4] c.w.e.q.PostScoreRefreshJob [PostScoreRefreshJob.java:56] [任务取消] 没有需要刷新的帖子!
+2020-05-01 14:45:45,957 INFO [SpringContextShutdownHook] o.q.c.QuartzScheduler [QuartzScheduler.java:585] Scheduler communityScheduler_$_macdeMacBook-Pro.local1588314255068 paused.
+2020-05-01 14:45:45,961 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:879] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] Member consumer-3-b704ab77-e127-40a6-b5d9-d34071bb724b sending LeaveGroup request to coordinator localhost:9092 (id: 2147483647 rack: null)
+2020-05-01 14:45:45,961 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:879] [Consumer clientId=consumer-1, groupId=easycommunity-consumer-group] Member consumer-1-b0f62b29-107e-429a-adfd-e7905c9d0ff0 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483647 rack: null)
+2020-05-01 14:45:45,961 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:879] [Consumer clientId=consumer-2, groupId=easycommunity-consumer-group] Member consumer-2-1279eef1-3912-48a6-9f59-aa7cc15783ab sending LeaveGroup request to coordinator localhost:9092 (id: 2147483647 rack: null)
+2020-05-01 14:45:45,963 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:1068] [Consumer clientId=consumer-2, groupId=easycommunity-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2020-05-01 14:45:45,963 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:1068] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2020-05-01 14:45:45,963 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:1068] [Consumer clientId=consumer-1, groupId=easycommunity-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2020-05-01 14:45:45,964 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService
+2020-05-01 14:45:45,964 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService
+2020-05-01 14:45:45,964 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService
+2020-05-01 14:45:45,999 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer [LogAccessor.java:279] easycommunity-consumer-group: Consumer stopped
+2020-05-01 14:45:46,001 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer [LogAccessor.java:279] easycommunity-consumer-group: Consumer stopped
+2020-05-01 14:45:46,002 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer [LogAccessor.java:279] easycommunity-consumer-group: Consumer stopped
+2020-05-01 14:45:46,005 INFO [SpringContextShutdownHook] o.s.s.q.SchedulerFactoryBean [SchedulerFactoryBean.java:845] Shutting down Quartz Scheduler
+2020-05-01 14:45:46,005 INFO [SpringContextShutdownHook] o.q.c.QuartzScheduler [QuartzScheduler.java:666] Scheduler communityScheduler_$_macdeMacBook-Pro.local1588314255068 shutting down.
+2020-05-01 14:45:46,005 INFO [SpringContextShutdownHook] o.q.c.QuartzScheduler [QuartzScheduler.java:585] Scheduler communityScheduler_$_macdeMacBook-Pro.local1588314255068 paused.
+2020-05-01 14:45:46,006 INFO [SpringContextShutdownHook] o.q.c.QuartzScheduler [QuartzScheduler.java:740] Scheduler communityScheduler_$_macdeMacBook-Pro.local1588314255068 shutdown complete.
+2020-05-01 14:45:46,008 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-01 14:45:46,128 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2020-05-01 14:45:46,130 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2020-05-01 14:45:57,807 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:55] Starting EasycommunityApplication on macdeMacBook-Pro.local with PID 59407 (/Users/szw/Downloads/easycommunity/target/classes started by szw in /Users/szw/Downloads/easycommunity)
+2020-05-01 14:45:57,810 INFO [restartedMain] c.w.e.EasycommunityApplication [SpringApplication.java:655] The following profiles are active: develop
+2020-05-01 14:45:57,849 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-01 14:45:57,849 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-01 14:45:58,805 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-01 14:45:58,807 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-05-01 14:45:58,857 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 45ms. Found 1 Elasticsearch repository interfaces.
+2020-05-01 14:45:58,861 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-01 14:45:58,862 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-05-01 14:45:58,870 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 7ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-05-01 14:45:58,878 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-01 14:45:58,879 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-01 14:45:58,892 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationExtensionSupport [RepositoryConfigurationExtensionSupport.java:348] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.wxhh.easycommunity.dao.elasticsearch.DiscussPostRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-05-01 14:45:58,892 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 6ms. Found 0 Redis repository interfaces.
+2020-05-01 14:45:59,718 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2020-05-01 14:45:59,726 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-01 14:45:59,727 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-05-01 14:45:59,727 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-01 14:45:59,802 INFO [restartedMain] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-05-01 14:45:59,802 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 1953 ms
+2020-05-01 14:46:00,128 INFO [restartedMain] o.e.p.PluginsService [PluginsService.java:197] no modules loaded
+2020-05-01 14:46:00,129 INFO [restartedMain] o.e.p.PluginsService [PluginsService.java:200] loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2020-05-01 14:46:00,129 INFO [restartedMain] o.e.p.PluginsService [PluginsService.java:200] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020-05-01 14:46:00,129 INFO [restartedMain] o.e.p.PluginsService [PluginsService.java:200] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020-05-01 14:46:00,129 INFO [restartedMain] o.e.p.PluginsService [PluginsService.java:200] loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2020-05-01 14:46:00,130 INFO [restartedMain] o.e.p.PluginsService [PluginsService.java:200] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020-05-01 14:46:00,668 INFO [restartedMain] o.s.d.e.c.TransportClientFactoryBean [TransportClientFactoryBean.java:88] Adding transport node : 127.0.0.1:9300
+2020-05-01 14:46:02,525 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2020-05-01 14:46:02,939 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-01 14:46:03,058 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-05-01 14:46:03,438 INFO [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:86] 
+
+Using generated security password: 76636fda-5376-4ee7-af62-52362edf5df8
+
+2020-05-01 14:46:03,493 INFO [restartedMain] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:43] Creating filter chain: Ant [pattern='/resources/**'], []
+2020-05-01 14:46:03,548 INFO [restartedMain] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@20974e0b, org.springframework.security.web.context.SecurityContextPersistenceFilter@51831688, org.springframework.security.web.header.HeaderWriterFilter@23e5b2ab, org.springframework.security.web.authentication.logout.LogoutFilter@72e46f60, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@294abfd9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ed7a8eb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f071d1, org.springframework.security.web.session.SessionManagementFilter@6e552fcf, org.springframework.security.web.access.ExceptionTranslationFilter@269dd6a7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2a9dff65]
+2020-05-01 14:46:03,829 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2020-05-01 14:46:03,962 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2020-05-01 14:46:04,039 INFO [restartedMain] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1220] Using default implementation for ThreadExecutor
+2020-05-01 14:46:04,048 INFO [restartedMain] o.q.c.SchedulerSignalerImpl [SchedulerSignalerImpl.java:61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-05-01 14:46:04,049 INFO [restartedMain] o.q.c.QuartzScheduler [QuartzScheduler.java:229] Quartz Scheduler v.2.3.2 created.
+2020-05-01 14:46:04,052 INFO [restartedMain] o.s.s.q.LocalDataSourceJobStore [JobStoreSupport.java:672] Using db table-based data access locking (synchronization).
+2020-05-01 14:46:04,053 INFO [restartedMain] o.s.s.q.LocalDataSourceJobStore [JobStoreCMT.java:145] JobStoreCMT initialized.
+2020-05-01 14:46:04,054 INFO [restartedMain] o.q.c.QuartzScheduler [QuartzScheduler.java:294] Scheduler meta-data: Quartz Scheduler (v2.3.2) 'communityScheduler' with instanceId 'macdeMacBook-Pro.local1588315564041'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2020-05-01 14:46:04,054 INFO [restartedMain] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1374] Quartz scheduler 'communityScheduler' initialized from an externally provided properties instance.
+2020-05-01 14:46:04,054 INFO [restartedMain] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1378] Quartz scheduler version: 2.3.2
+2020-05-01 14:46:04,054 INFO [restartedMain] o.q.c.QuartzScheduler [QuartzScheduler.java:2293] JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3c282599
+2020-05-01 14:46:04,142 INFO [restartedMain] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 11 endpoint(s) beneath base path '/actuator'
+2020-05-01 14:46:04,261 INFO [restartedMain] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:347] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = easycommunity-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2020-05-01 14:46:04,323 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:117] Kafka version: 2.3.1
+2020-05-01 14:46:04,323 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:118] Kafka commitId: 18a913733fb71c01
+2020-05-01 14:46:04,323 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka startTimeMs: 1588315564321
+2020-05-01 14:46:04,325 INFO [restartedMain] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:964] [Consumer clientId=consumer-1, groupId=easycommunity-consumer-group] Subscribed to topic(s): delete
+2020-05-01 14:46:04,326 INFO [restartedMain] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:181] Initializing ExecutorService
+2020-05-01 14:46:04,331 INFO [restartedMain] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:347] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = easycommunity-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2020-05-01 14:46:04,347 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:117] Kafka version: 2.3.1
+2020-05-01 14:46:04,348 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:118] Kafka commitId: 18a913733fb71c01
+2020-05-01 14:46:04,348 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka startTimeMs: 1588315564347
+2020-05-01 14:46:04,348 INFO [restartedMain] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:964] [Consumer clientId=consumer-2, groupId=easycommunity-consumer-group] Subscribed to topic(s): publish
+2020-05-01 14:46:04,348 INFO [restartedMain] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:181] Initializing ExecutorService
+2020-05-01 14:46:04,350 INFO [restartedMain] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:347] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = easycommunity-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2020-05-01 14:46:04,361 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:117] Kafka version: 2.3.1
+2020-05-01 14:46:04,362 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:118] Kafka commitId: 18a913733fb71c01
+2020-05-01 14:46:04,362 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka startTimeMs: 1588315564361
+2020-05-01 14:46:04,362 INFO [restartedMain] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:964] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] Subscribed to topic(s): comment, like, follow
+2020-05-01 14:46:04,362 INFO [restartedMain] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:181] Initializing ExecutorService
+2020-05-01 14:46:04,364 INFO [restartedMain] o.s.s.q.SchedulerFactoryBean [SchedulerFactoryBean.java:727] Starting Quartz Scheduler now
+2020-05-01 14:46:04,367 INFO [restartedMain] o.s.s.q.LocalDataSourceJobStore [JobStoreSupport.java:3644] ClusterManager: detected 1 failed or restarted instances.
+2020-05-01 14:46:04,368 INFO [restartedMain] o.s.s.q.LocalDataSourceJobStore [JobStoreSupport.java:3503] ClusterManager: Scanning for instance "macdeMacBook-Pro.local1588314255068"'s failed in-progress jobs.
+2020-05-01 14:46:04,375 INFO [restartedMain] o.q.c.QuartzScheduler [QuartzScheduler.java:547] Scheduler communityScheduler_$_macdeMacBook-Pro.local1588315564041 started.
+2020-05-01 14:46:04,389 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-05-01 14:46:04,407 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-01 14:46:04,411 INFO [restartedMain] c.w.e.EasycommunityApplication [StartupInfoLogger.java:61] Started EasycommunityApplication in 6.994 seconds (JVM running for 7.869)
+2020-05-01 14:46:04,466 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.Metadata [Metadata.java:261] [Consumer clientId=consumer-2, groupId=easycommunity-consumer-group] Cluster ID: 43HdDh_QRGqyXBQPomzHIA
+2020-05-01 14:46:04,466 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.Metadata [Metadata.java:261] [Consumer clientId=consumer-1, groupId=easycommunity-consumer-group] Cluster ID: 43HdDh_QRGqyXBQPomzHIA
+2020-05-01 14:46:04,466 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.Metadata [Metadata.java:261] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] Cluster ID: 43HdDh_QRGqyXBQPomzHIA
+2020-05-01 14:46:04,467 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:728] [Consumer clientId=consumer-2, groupId=easycommunity-consumer-group] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2020-05-01 14:46:04,468 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:728] [Consumer clientId=consumer-1, groupId=easycommunity-consumer-group] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2020-05-01 14:46:04,468 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:728] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2020-05-01 14:46:04,470 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:476] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] Revoking previously assigned partitions []
+2020-05-01 14:46:04,470 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:476] [Consumer clientId=consumer-2, groupId=easycommunity-consumer-group] Revoking previously assigned partitions []
+2020-05-01 14:46:04,470 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:476] [Consumer clientId=consumer-1, groupId=easycommunity-consumer-group] Revoking previously assigned partitions []
+2020-05-01 14:46:04,471 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:279] easycommunity-consumer-group: partitions revoked: []
+2020-05-01 14:46:04,471 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:279] easycommunity-consumer-group: partitions revoked: []
+2020-05-01 14:46:04,471 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:279] easycommunity-consumer-group: partitions revoked: []
+2020-05-01 14:46:04,471 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:505] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] (Re-)joining group
+2020-05-01 14:46:04,471 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:505] [Consumer clientId=consumer-2, groupId=easycommunity-consumer-group] (Re-)joining group
+2020-05-01 14:46:04,471 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:505] [Consumer clientId=consumer-1, groupId=easycommunity-consumer-group] (Re-)joining group
+2020-05-01 14:46:04,479 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:505] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] (Re-)joining group
+2020-05-01 14:46:04,479 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:505] [Consumer clientId=consumer-2, groupId=easycommunity-consumer-group] (Re-)joining group
+2020-05-01 14:46:04,479 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:505] [Consumer clientId=consumer-1, groupId=easycommunity-consumer-group] (Re-)joining group
+2020-05-01 14:46:04,487 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:469] [Consumer clientId=consumer-1, groupId=easycommunity-consumer-group] Successfully joined group with generation 418
+2020-05-01 14:46:04,487 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:469] [Consumer clientId=consumer-2, groupId=easycommunity-consumer-group] Successfully joined group with generation 418
+2020-05-01 14:46:04,487 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:469] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] Successfully joined group with generation 418
+2020-05-01 14:46:04,490 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:283] [Consumer clientId=consumer-1, groupId=easycommunity-consumer-group] Setting newly assigned partitions: delete-0
+2020-05-01 14:46:04,490 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:283] [Consumer clientId=consumer-2, groupId=easycommunity-consumer-group] Setting newly assigned partitions: publish-0
+2020-05-01 14:46:04,490 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:283] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] Setting newly assigned partitions: comment-0, like-0, follow-0
+2020-05-01 14:46:04,495 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:525] [Consumer clientId=consumer-2, groupId=easycommunity-consumer-group] Setting offset for partition publish-0 to the committed offset FetchPosition{offset=8, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 0 rack: null), epoch=0}}
+2020-05-01 14:46:04,495 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:525] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] Setting offset for partition comment-0 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 0 rack: null), epoch=0}}
+2020-05-01 14:46:04,495 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:525] [Consumer clientId=consumer-1, groupId=easycommunity-consumer-group] Setting offset for partition delete-0 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 0 rack: null), epoch=0}}
+2020-05-01 14:46:04,496 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:525] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] Setting offset for partition like-0 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 0 rack: null), epoch=0}}
+2020-05-01 14:46:04,497 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:525] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] Setting offset for partition follow-0 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 0 rack: null), epoch=0}}
+2020-05-01 14:46:04,503 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:279] easycommunity-consumer-group: partitions assigned: [delete-0]
+2020-05-01 14:46:04,503 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:279] easycommunity-consumer-group: partitions assigned: [publish-0]
+2020-05-01 14:46:04,503 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:279] easycommunity-consumer-group: partitions assigned: [comment-0, like-0, follow-0]
+2020-05-01 14:46:04,891 INFO [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-01 14:46:04,891 INFO [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-05-01 14:46:04,907 INFO [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 16 ms
+2020-05-01 14:46:08,795 INFO [boundedElastic-1] i.l.c.EpollProvider [Netty4InternalESLogger.java:105] Starting without optional epoll library
+2020-05-01 14:46:08,796 INFO [boundedElastic-1] i.l.c.KqueueProvider [Netty4InternalESLogger.java:105] Starting without optional kqueue library
+2020-05-01 14:46:12,128 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.UserService.findLoginTicket].
+2020-05-01 14:46:12,193 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:12,244 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.UserService.getAuthorities].
+2020-05-01 14:46:12,247 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.DataService.recordUV].
+2020-05-01 14:46:12,252 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.DataService.recordDAU].
+2020-05-01 14:46:12,279 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.DiscussPostService.findDiscussPostRows].
+2020-05-01 14:46:12,308 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.DiscussPostService.findDiscussPosts].
+2020-05-01 14:46:12,315 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:12,334 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:12,342 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:12,346 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:12,347 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:12,350 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:12,351 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:12,354 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:12,356 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:12,358 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:12,359 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:12,363 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:12,364 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:12,370 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:12,371 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:12,375 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:12,376 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:12,377 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:12,378 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:12,381 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:12,386 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.MessageService.findLetterUnreadCount].
+2020-05-01 14:46:12,391 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:12],访问了[com.wxhh.easycommunity.service.MessageService.findNoticeUnreadCount].
+2020-05-01 14:46:16,786 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:16],访问了[com.wxhh.easycommunity.service.UserService.findLoginTicket].
+2020-05-01 14:46:16,788 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:16],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:16,789 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:16],访问了[com.wxhh.easycommunity.service.UserService.getAuthorities].
+2020-05-01 14:46:16,791 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:16],访问了[com.wxhh.easycommunity.service.DataService.recordUV].
+2020-05-01 14:46:16,792 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:16],访问了[com.wxhh.easycommunity.service.DataService.recordDAU].
+2020-05-01 14:46:16,795 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:16],访问了[com.wxhh.easycommunity.service.UserService.logout].
+2020-05-01 14:46:16,799 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:16],访问了[com.wxhh.easycommunity.service.MessageService.findLetterUnreadCount].
+2020-05-01 14:46:16,802 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:16],访问了[com.wxhh.easycommunity.service.MessageService.findNoticeUnreadCount].
+2020-05-01 14:46:16,835 INFO [http-nio-8080-exec-6] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:16],访问了[com.wxhh.easycommunity.service.UserService.findLoginTicket].
+2020-05-01 14:46:16,836 INFO [http-nio-8080-exec-6] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:16],访问了[com.wxhh.easycommunity.service.DataService.recordUV].
+2020-05-01 14:46:16,919 INFO [http-nio-8080-exec-9] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:16],访问了[com.wxhh.easycommunity.service.UserService.findLoginTicket].
+2020-05-01 14:46:16,921 INFO [http-nio-8080-exec-9] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:16],访问了[com.wxhh.easycommunity.service.DataService.recordUV].
+2020-05-01 14:46:17,924 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:17],访问了[com.wxhh.easycommunity.service.UserService.findLoginTicket].
+2020-05-01 14:46:17,925 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:17],访问了[com.wxhh.easycommunity.service.DataService.recordUV].
+2020-05-01 14:46:17,926 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:17],访问了[com.wxhh.easycommunity.service.DiscussPostService.findDiscussPostRows].
+2020-05-01 14:46:17,927 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:17],访问了[com.wxhh.easycommunity.service.DiscussPostService.findDiscussPosts].
+2020-05-01 14:46:17,935 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:17],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:17,936 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:17],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:17,937 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:17],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:17,940 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:17],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:17,941 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:17],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:17,942 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:17],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:17,943 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:17],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:17,944 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:17],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:17,945 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:17],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:17,946 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:17],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:17,947 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:17],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:17,948 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:17],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:17,950 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:17],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:17,951 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:17],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:17,952 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:17],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:17,953 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:17],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:17,954 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:17],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:17,956 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:17],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:17,957 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:17],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:17,958 INFO [http-nio-8080-exec-1] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:17],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:20,744 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:20],访问了[com.wxhh.easycommunity.service.UserService.findLoginTicket].
+2020-05-01 14:46:20,745 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:20],访问了[com.wxhh.easycommunity.service.DataService.recordUV].
+2020-05-01 14:46:20,746 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:20],访问了[com.wxhh.easycommunity.service.DiscussPostService.findDiscussPostRows].
+2020-05-01 14:46:20,747 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:20],访问了[com.wxhh.easycommunity.service.DiscussPostService.findDiscussPosts].
+2020-05-01 14:46:20,754 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:20],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:20,755 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:20],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:20,756 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:20],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:20,757 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:20],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:20,758 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:20],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:20,761 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:20],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:20,762 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:20],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:20,763 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:20],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:20,764 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:20],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:20,765 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:20],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:20,766 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:20],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:20,767 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:20],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:20,768 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:20],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:20,769 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:20],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:20,770 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:20],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:20,771 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:20],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:20,772 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:20],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:20,773 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:20],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:20,773 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:20],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:20,774 INFO [http-nio-8080-exec-5] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:20],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:22,884 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.UserService.findLoginTicket].
+2020-05-01 14:46:22,886 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.DataService.recordUV].
+2020-05-01 14:46:22,894 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.DiscussPostService.findDiscussPostById].
+2020-05-01 14:46:22,897 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:22,898 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:22,899 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.CommentService.findCommentsByEntity].
+2020-05-01 14:46:22,906 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:22,910 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:22,910 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.CommentService.findCommentsByEntity].
+2020-05-01 14:46:22,913 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:22,914 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:22,915 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:22,916 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:22,917 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.CommentService.findCommentCount].
+2020-05-01 14:46:22,919 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:22,921 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:22,922 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.CommentService.findCommentsByEntity].
+2020-05-01 14:46:22,924 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.CommentService.findCommentCount].
+2020-05-01 14:46:22,926 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:22,929 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:22,930 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.CommentService.findCommentsByEntity].
+2020-05-01 14:46:22,932 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.CommentService.findCommentCount].
+2020-05-01 14:46:22,933 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:22,935 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:22,935 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.CommentService.findCommentsByEntity].
+2020-05-01 14:46:22,939 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.CommentService.findCommentCount].
+2020-05-01 14:46:22,942 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:22,943 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:22,943 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.CommentService.findCommentsByEntity].
+2020-05-01 14:46:22,945 INFO [http-nio-8080-exec-10] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:22],访问了[com.wxhh.easycommunity.service.CommentService.findCommentCount].
+2020-05-01 14:46:26,090 INFO [http-nio-8080-exec-4] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:26],访问了[com.wxhh.easycommunity.service.UserService.findLoginTicket].
+2020-05-01 14:46:26,091 INFO [http-nio-8080-exec-4] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:26],访问了[com.wxhh.easycommunity.service.DataService.recordUV].
+2020-05-01 14:46:26,093 INFO [http-nio-8080-exec-4] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:26],访问了[com.wxhh.easycommunity.service.DiscussPostService.findDiscussPostRows].
+2020-05-01 14:46:26,093 INFO [http-nio-8080-exec-4] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:26],访问了[com.wxhh.easycommunity.service.DiscussPostService.findDiscussPosts].
+2020-05-01 14:46:26,097 INFO [http-nio-8080-exec-4] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:26],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:26,098 INFO [http-nio-8080-exec-4] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:26],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:26,099 INFO [http-nio-8080-exec-4] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:26],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:26,100 INFO [http-nio-8080-exec-4] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:26],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:26,101 INFO [http-nio-8080-exec-4] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:26],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:26,102 INFO [http-nio-8080-exec-4] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:26],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:26,103 INFO [http-nio-8080-exec-4] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:26],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:26,104 INFO [http-nio-8080-exec-4] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:26],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:26,105 INFO [http-nio-8080-exec-4] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:26],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:26,105 INFO [http-nio-8080-exec-4] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:26],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:26,106 INFO [http-nio-8080-exec-4] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:26],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:26,107 INFO [http-nio-8080-exec-4] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:26],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:26,108 INFO [http-nio-8080-exec-4] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:26],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:26,109 INFO [http-nio-8080-exec-4] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:26],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:26,109 INFO [http-nio-8080-exec-4] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:26],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:26,110 INFO [http-nio-8080-exec-4] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:26],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:26,111 INFO [http-nio-8080-exec-4] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:26],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:26,112 INFO [http-nio-8080-exec-4] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:26],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:26,112 INFO [http-nio-8080-exec-4] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:26],访问了[com.wxhh.easycommunity.service.UserService.findUserById].
+2020-05-01 14:46:26,113 INFO [http-nio-8080-exec-4] c.w.e.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1],在[2020-05-01 14:46:26],访问了[com.wxhh.easycommunity.service.LikeService.findEntityLikeCount].
+2020-05-01 14:46:29,364 INFO [SpringContextShutdownHook] o.q.c.QuartzScheduler [QuartzScheduler.java:585] Scheduler communityScheduler_$_macdeMacBook-Pro.local1588315564041 paused.
+2020-05-01 14:46:29,369 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:879] [Consumer clientId=consumer-2, groupId=easycommunity-consumer-group] Member consumer-2-dcaac815-2928-47ba-9074-9e327fb863cb sending LeaveGroup request to coordinator localhost:9092 (id: 2147483647 rack: null)
+2020-05-01 14:46:29,369 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:879] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] Member consumer-3-e4a900f1-458a-47fc-9b02-4c4311d64e6a sending LeaveGroup request to coordinator localhost:9092 (id: 2147483647 rack: null)
+2020-05-01 14:46:29,369 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:879] [Consumer clientId=consumer-1, groupId=easycommunity-consumer-group] Member consumer-1-5803312a-2a5c-4174-a970-da4f89ff236b sending LeaveGroup request to coordinator localhost:9092 (id: 2147483647 rack: null)
+2020-05-01 14:46:29,370 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:1068] [Consumer clientId=consumer-1, groupId=easycommunity-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2020-05-01 14:46:29,370 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:1068] [Consumer clientId=consumer-2, groupId=easycommunity-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2020-05-01 14:46:29,370 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:1068] [Consumer clientId=consumer-3, groupId=easycommunity-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2020-05-01 14:46:29,371 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService
+2020-05-01 14:46:29,371 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService
+2020-05-01 14:46:29,371 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService
+2020-05-01 14:46:29,410 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer [LogAccessor.java:279] easycommunity-consumer-group: Consumer stopped
+2020-05-01 14:46:29,411 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer [LogAccessor.java:279] easycommunity-consumer-group: Consumer stopped
+2020-05-01 14:46:29,412 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer [LogAccessor.java:279] easycommunity-consumer-group: Consumer stopped
+2020-05-01 14:46:29,414 INFO [SpringContextShutdownHook] o.s.s.q.SchedulerFactoryBean [SchedulerFactoryBean.java:845] Shutting down Quartz Scheduler
+2020-05-01 14:46:29,415 INFO [SpringContextShutdownHook] o.q.c.QuartzScheduler [QuartzScheduler.java:666] Scheduler communityScheduler_$_macdeMacBook-Pro.local1588315564041 shutting down.
+2020-05-01 14:46:29,415 INFO [SpringContextShutdownHook] o.q.c.QuartzScheduler [QuartzScheduler.java:585] Scheduler communityScheduler_$_macdeMacBook-Pro.local1588315564041 paused.
+2020-05-01 14:46:29,415 INFO [SpringContextShutdownHook] o.q.c.QuartzScheduler [QuartzScheduler.java:740] Scheduler communityScheduler_$_macdeMacBook-Pro.local1588315564041 shutdown complete.
+2020-05-01 14:46:29,418 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-01 14:46:29,536 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2020-05-01 14:46:29,542 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
