@@ -1,6 +1,5 @@
 package com.wxhh.easycommunity;
 
-import com.wxhh.easycommunity.service.AlphaService;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -36,8 +35,6 @@ public class ThreadPoolTests {
     @Autowired
     private ThreadPoolTaskScheduler taskScheduler;
 
-    @Autowired
-    private AlphaService alphaService;
 
     private void sleep(long m) {
         try {
@@ -116,7 +113,7 @@ public class ThreadPoolTests {
     @Test
     public void testThreadPoolTaskExecutorSimple() {
         for (int i = 0; i < 10; i++) {
-            alphaService.execute1();
+//            alphaService.execute1();
         }
 
         sleep(10000);

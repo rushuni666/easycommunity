@@ -62,7 +62,7 @@ public class LoginController implements EasyCommunityConstant {
         Map<String, Object> map = userService.register(user);
 
         if (map == null || map.isEmpty()) {
-            model.addAttribute("msg", "注册成功，注册邮件已发送，请进尽快激活");
+            model.addAttribute("msg", "注册成功 注册邮件已发送 请进尽快激活");
             model.addAttribute("target", "index");
             return "/site/operate-result";
         } else {
@@ -77,13 +77,13 @@ public class LoginController implements EasyCommunityConstant {
     public String activation(Model model, @PathVariable("userId") int userId, @PathVariable("code") String code) {
         int result = userService.activation(userId, code);
         if (result == ACTIVATION_SUCCESS) {
-            model.addAttribute("msg", "恭喜，激活成功。");
+            model.addAttribute("msg", "恭喜 激活成功。");
             model.addAttribute("target", "/login");
         } else if (result == ACTIVATION_REPEAT) {
-            model.addAttribute("msg", "本次操作无效，该账号已经被激活。");
+            model.addAttribute("msg", "本次操作无效 该账号已经被激活。");
             model.addAttribute("target", "/index");
         } else {
-            model.addAttribute("msg", "对不起，激活码不正确。");
+            model.addAttribute("msg", "对不起 激活码不正确。");
             model.addAttribute("target", "/index");
         }
         return "/site/operate-result";

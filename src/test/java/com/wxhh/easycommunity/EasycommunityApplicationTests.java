@@ -1,11 +1,7 @@
 package com.wxhh.easycommunity;
 
-import com.wxhh.easycommunity.dao.AlphaDao;
-import com.wxhh.easycommunity.service.AlphaService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.BeansException;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
@@ -25,25 +21,7 @@ class EasycommunityApplicationTests implements ApplicationContextAware {
 		this.applicationContext = applicationContext;
 	}
 
-	@Test
-	public void testApplicationContext() {
-		System.out.println(applicationContext);
 
-		AlphaDao alphaDao = applicationContext.getBean(AlphaDao.class);
-		System.out.println(alphaDao.select());
-
-		alphaDao = applicationContext.getBean("alphaHibernate", AlphaDao.class);
-		System.out.println(alphaDao.select());
-	}
-
-	@Test
-	public void testBeanManangement() {
-		AlphaService alphaService = applicationContext.getBean(AlphaService.class);
-		System.out.println(alphaService);
-
-		alphaService = applicationContext.getBean(AlphaService.class);
-		System.out.println(alphaService);
-	}
 
 	@Test
 	public void testBeanConfig() {
@@ -51,12 +29,4 @@ class EasycommunityApplicationTests implements ApplicationContextAware {
 		System.out.println(simpleDateFormat.format((new Date())));
 	}
 
-	@Autowired
-	@Qualifier("alphaHibernate")
-	private AlphaDao alphaDao;
-
-	@Test
-	public void testDI() {
-		System.out.println(alphaDao);
-	}
 }

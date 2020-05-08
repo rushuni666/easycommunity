@@ -11,7 +11,8 @@ import java.util.UUID;
 public class EasyCommunityUtil {
 
     /**
-     * 随机字符，加的盐
+     * 随机字符
+加的盐
      * @return
      */
     public static String generateUUID() {
