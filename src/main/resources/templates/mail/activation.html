@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="  https://i.loli.net/2020/04/29/ij5PhJeGvrnUqWt.png"/>
+    <title>轻松社区-激活账号</title>
+</head>
+<body>
+	<div>
+		<p>
+			<b th:text="${email}">xxx@xxx.com</b>, 您好!
+		</p>
+		<p>
+			您正在注册轻松社区, 这是一封激活邮件, 请点击
+			<a th:href="${url}">此链接</a>,
+			激活您的轻松社区账号!
+		</p>
+	</div>
+</body>
+</html>
