@@ -1,6 +1,6 @@
-package com.wxhh.easycommunity.utils;
+package com.wxhh.easycommunity.util;
 
-public class RedisKeyUtil {
+public class RedisKeyUtils {
 
     private static final String SPLIT = ":";
     private static final String PREFIX_ENTITY_LIKE = "like:entity";

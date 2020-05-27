@@ -4,10 +4,10 @@ import com.wxhh.easycommunity.entity.Event;
 import com.wxhh.easycommunity.entity.User;
 import com.wxhh.easycommunity.event.EventProducer;
 import com.wxhh.easycommunity.service.LikeService;
-import com.wxhh.easycommunity.utils.EasyCommunityConstant;
-import com.wxhh.easycommunity.utils.EasyCommunityUtil;
-import com.wxhh.easycommunity.utils.HostHolder;
-import com.wxhh.easycommunity.utils.RedisKeyUtil;
+import com.wxhh.easycommunity.util.EasyCommunityConstant;
+import com.wxhh.easycommunity.util.EasyCommunityUtils;
+import com.wxhh.easycommunity.util.HostHolder;
+import com.wxhh.easycommunity.util.RedisKeyUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
@@ -64,11 +64,11 @@ public class LikeController implements EasyCommunityConstant {
 
         if(entityType == ENTITY_TYPE_POST) {
             // 计算帖子分数
-            String redisKey = RedisKeyUtil.getPostScoreKey();
+            String redisKey = RedisKeyUtils.getPostScoreKey();
             redisTemplate.opsForSet().add(redisKey, postId);
         }
 
-        return EasyCommunityUtil.getJSONString(0, null, map);
+        return EasyCommunityUtils.getJSONString(0, null, map);
     }
 
 }

@@ -1,8 +1,8 @@
 package com.wxhh.easycommunity.config;
 
 
-import com.wxhh.easycommunity.utils.EasyCommunityConstant;
-import com.wxhh.easycommunity.utils.EasyCommunityUtil;
+import com.wxhh.easycommunity.util.EasyCommunityConstant;
+import com.wxhh.easycommunity.util.EasyCommunityUtils;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -74,7 +74,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements Easy
                         if ("XMLHttpRequest".equals(xRequestedWith)) {
                             response.setContentType("application/plain;charset=utf-8");
                             PrintWriter writer = response.getWriter();
-                            writer.write(EasyCommunityUtil.getJSONString(403, "你还没有登录哦!"));
+                            writer.write(EasyCommunityUtils.getJSONString(403, "你还没有登录哦!"));
                         } else {
                             response.sendRedirect(request.getContextPath() + "/login");
                         }
@@ -88,7 +88,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements Easy
                         if ("XMLHttpRequest".equals(xRequestedWith)) {
                             response.setContentType("application/plain;charset=utf-8");
                             PrintWriter writer = response.getWriter();
-                            writer.write(EasyCommunityUtil.getJSONString(403, "你没有访问此功能的权限!"));
+                            writer.write(EasyCommunityUtils.getJSONString(403, "你没有访问此功能的权限!"));
                         } else {
                             response.sendRedirect(request.getContextPath() + "/denied");
                         }

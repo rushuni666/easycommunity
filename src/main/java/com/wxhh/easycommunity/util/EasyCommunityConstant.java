@@ -1,4 +1,4 @@
-package com.wxhh.easycommunity.utils;
+package com.wxhh.easycommunity.util;
 
 public interface EasyCommunityConstant {
 

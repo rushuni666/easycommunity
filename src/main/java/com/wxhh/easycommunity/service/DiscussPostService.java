@@ -5,7 +5,7 @@ import com.github.benmanes.caffeine.cache.Caffeine;
 import com.github.benmanes.caffeine.cache.LoadingCache;
 import com.wxhh.easycommunity.dao.DiscussPostMapper;
 import com.wxhh.easycommunity.entity.DiscussPost;
-import com.wxhh.easycommunity.utils.SensitiveFilter;
+import com.wxhh.easycommunity.util.SensitiveFilter;
 import org.checkerframework.checker.nullness.qual.NonNull;
 import org.checkerframework.checker.nullness.qual.Nullable;
 import org.slf4j.Logger;

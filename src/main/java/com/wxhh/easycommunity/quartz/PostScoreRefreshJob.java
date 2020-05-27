@@ -5,8 +5,8 @@ import com.wxhh.easycommunity.entity.DiscussPost;
 import com.wxhh.easycommunity.service.DiscussPostService;
 import com.wxhh.easycommunity.service.ElasticsearchService;
 import com.wxhh.easycommunity.service.LikeService;
-import com.wxhh.easycommunity.utils.EasyCommunityConstant;
-import com.wxhh.easycommunity.utils.RedisKeyUtil;
+import com.wxhh.easycommunity.util.EasyCommunityConstant;
+import com.wxhh.easycommunity.util.RedisKeyUtils;
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
@@ -49,7 +49,7 @@ public class PostScoreRefreshJob implements Job, EasyCommunityConstant {
 
     @Override
     public void execute(JobExecutionContext context) throws JobExecutionException {
-        String redisKey = RedisKeyUtil.getPostScoreKey();
+        String redisKey = RedisKeyUtils.getPostScoreKey();
         BoundSetOperations operations = redisTemplate.boundSetOps(redisKey);
 
         if (operations.size() == 0) {

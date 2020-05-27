@@ -3,9 +3,9 @@ package com.wxhh.easycommunity.controller;
 import com.google.code.kaptcha.Producer;
 import com.wxhh.easycommunity.entity.User;
 import com.wxhh.easycommunity.service.UserService;
-import com.wxhh.easycommunity.utils.EasyCommunityConstant;
-import com.wxhh.easycommunity.utils.EasyCommunityUtil;
-import com.wxhh.easycommunity.utils.RedisKeyUtil;
+import com.wxhh.easycommunity.util.EasyCommunityConstant;
+import com.wxhh.easycommunity.util.EasyCommunityUtils;
+import com.wxhh.easycommunity.util.RedisKeyUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -99,13 +99,13 @@ public class LoginController implements EasyCommunityConstant {
         // session.setAttribute("kaptcha", text);
 
         // 验证码的归属
-        String kaptchaOwner = EasyCommunityUtil.generateUUID();
+        String kaptchaOwner = EasyCommunityUtils.generateUUID();
         Cookie cookie = new Cookie("kaptchaOwner", kaptchaOwner);
         cookie.setMaxAge(60);
         cookie.setPath(contextPath);
         response.addCookie(cookie);
         // 将验证码存入Redis
-        String redisKey = RedisKeyUtil.getKaptchaKey(kaptchaOwner);
+        String redisKey = RedisKeyUtils.getKaptchaKey(kaptchaOwner);
         redisTemplate.opsForValue().set(redisKey, text, 60, TimeUnit.SECONDS);
 
         // 将突图片输出给浏览器
@@ -126,7 +126,7 @@ public class LoginController implements EasyCommunityConstant {
         // String kaptcha = (String) session.getAttribute("kaptcha");
         String kaptcha = null;
         if (StringUtils.isNotBlank(kaptchaOwner)) {
-            String redisKey = RedisKeyUtil.getKaptchaKey(kaptchaOwner);
+            String redisKey = RedisKeyUtils.getKaptchaKey(kaptchaOwner);
             kaptcha = (String) redisTemplate.opsForValue().get(redisKey);
         }
 

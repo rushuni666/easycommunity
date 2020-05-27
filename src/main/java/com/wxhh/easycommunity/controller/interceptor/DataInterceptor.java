@@ -3,7 +3,7 @@ package com.wxhh.easycommunity.controller.interceptor;
 
 import com.wxhh.easycommunity.entity.User;
 import com.wxhh.easycommunity.service.DataService;
-import com.wxhh.easycommunity.utils.HostHolder;
+import com.wxhh.easycommunity.util.HostHolder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;

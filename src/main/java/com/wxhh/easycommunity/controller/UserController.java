@@ -5,9 +5,9 @@ import com.wxhh.easycommunity.entity.User;
 import com.wxhh.easycommunity.service.FollowService;
 import com.wxhh.easycommunity.service.LikeService;
 import com.wxhh.easycommunity.service.UserService;
-import com.wxhh.easycommunity.utils.EasyCommunityConstant;
-import com.wxhh.easycommunity.utils.EasyCommunityUtil;
-import com.wxhh.easycommunity.utils.HostHolder;
+import com.wxhh.easycommunity.util.EasyCommunityConstant;
+import com.wxhh.easycommunity.util.EasyCommunityUtils;
+import com.wxhh.easycommunity.util.HostHolder;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -75,7 +75,7 @@ public class UserController implements EasyCommunityConstant {
         }
 
         // 生成随机文件名
-        fileName = EasyCommunityUtil.generateUUID() + suffix;
+        fileName = EasyCommunityUtils.generateUUID() + suffix;
         // 确定文件存放的路径
         File dest = new File(uploadPath + "/" + fileName);
         try {

@@ -6,9 +6,9 @@ import com.wxhh.easycommunity.entity.User;
 import com.wxhh.easycommunity.event.EventProducer;
 import com.wxhh.easycommunity.service.FollowService;
 import com.wxhh.easycommunity.service.UserService;
-import com.wxhh.easycommunity.utils.EasyCommunityConstant;
-import com.wxhh.easycommunity.utils.EasyCommunityUtil;
-import com.wxhh.easycommunity.utils.HostHolder;
+import com.wxhh.easycommunity.util.EasyCommunityConstant;
+import com.wxhh.easycommunity.util.EasyCommunityUtils;
+import com.wxhh.easycommunity.util.HostHolder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -52,7 +52,7 @@ public class FollowController implements EasyCommunityConstant {
         eventProducer.fireEvent(event);
 
 
-        return EasyCommunityUtil.getJSONString(0, "已关注!");
+        return EasyCommunityUtils.getJSONString(0, "已关注!");
     }
 
     @RequestMapping(path = "/unfollow", method = RequestMethod.POST)
@@ -62,7 +62,7 @@ public class FollowController implements EasyCommunityConstant {
 
         followService.unfollow(user.getId(), entityType, entityId);
 
-        return EasyCommunityUtil.getJSONString(0, "已取消关注!");
+        return EasyCommunityUtils.getJSONString(0, "已取消关注!");
     }
 
 

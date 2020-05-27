@@ -1,9 +1,9 @@
-package com.wxhh.easycommunity.utils;
+package com.wxhh.easycommunity.util;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 
-public class CookieUtil {
+public class CookieUtils {
 
     public static String getValue(HttpServletRequest request, String name) {
         if (request == null || name == null) {

@@ -7,9 +7,9 @@ import com.wxhh.easycommunity.entity.Event;
 import com.wxhh.easycommunity.event.EventProducer;
 import com.wxhh.easycommunity.service.CommentService;
 import com.wxhh.easycommunity.service.DiscussPostService;
-import com.wxhh.easycommunity.utils.EasyCommunityConstant;
-import com.wxhh.easycommunity.utils.HostHolder;
-import com.wxhh.easycommunity.utils.RedisKeyUtil;
+import com.wxhh.easycommunity.util.EasyCommunityConstant;
+import com.wxhh.easycommunity.util.HostHolder;
+import com.wxhh.easycommunity.util.RedisKeyUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
@@ -72,7 +72,7 @@ public class CommentController implements EasyCommunityConstant {
         }
 
         // 计算帖子分数
-        String redisKey = RedisKeyUtil.getPostScoreKey();
+        String redisKey = RedisKeyUtils.getPostScoreKey();
         redisTemplate.opsForSet().add(redisKey, discussPostId);
 
         return "redirect:/discuss/detail/" + discussPostId;

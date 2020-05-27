@@ -1,4 +1,4 @@
-package com.wxhh.easycommunity.utils;
+package com.wxhh.easycommunity.util;
 
 import org.apache.commons.lang3.CharUtils;
 import org.apache.commons.lang3.StringUtils;

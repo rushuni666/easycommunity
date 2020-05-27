@@ -3,8 +3,8 @@ package com.wxhh.easycommunity.controller.interceptor;
 import com.wxhh.easycommunity.entity.LoginTicket;
 import com.wxhh.easycommunity.entity.User;
 import com.wxhh.easycommunity.service.UserService;
-import com.wxhh.easycommunity.utils.CookieUtil;
-import com.wxhh.easycommunity.utils.HostHolder;
+import com.wxhh.easycommunity.util.CookieUtils;
+import com.wxhh.easycommunity.util.HostHolder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -30,7 +30,7 @@ public class LoginTicketInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         // 从cookie中获取凭证
-        String ticket = CookieUtil.getValue(request, "ticket");
+        String ticket = CookieUtils.getValue(request, "ticket");
 
         if (ticket != null) {
             // 查询凭证

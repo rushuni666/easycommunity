@@ -7,10 +7,10 @@ import com.wxhh.easycommunity.service.CommentService;
 import com.wxhh.easycommunity.service.DiscussPostService;
 import com.wxhh.easycommunity.service.LikeService;
 import com.wxhh.easycommunity.service.UserService;
-import com.wxhh.easycommunity.utils.EasyCommunityConstant;
-import com.wxhh.easycommunity.utils.EasyCommunityUtil;
-import com.wxhh.easycommunity.utils.HostHolder;
-import com.wxhh.easycommunity.utils.RedisKeyUtil;
+import com.wxhh.easycommunity.util.EasyCommunityConstant;
+import com.wxhh.easycommunity.util.EasyCommunityUtils;
+import com.wxhh.easycommunity.util.HostHolder;
+import com.wxhh.easycommunity.util.RedisKeyUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
@@ -52,7 +52,7 @@ public class DiscussPostController implements EasyCommunityConstant {
     public String addDiscussPost(String title, String content) {
         User user = hostHolder.getUser();
         if (user == null) {
-            return EasyCommunityUtil.getJSONString(403, "你还没有登录哦!");
+            return EasyCommunityUtils.getJSONString(403, "你还没有登录哦!");
         }
 
         DiscussPost post = new DiscussPost();
@@ -71,11 +71,11 @@ public class DiscussPostController implements EasyCommunityConstant {
         eventProducer.fireEvent(event);
 
         // 计算帖子分数
-        String redisKey = RedisKeyUtil.getPostScoreKey();
+        String redisKey = RedisKeyUtils.getPostScoreKey();
         redisTemplate.opsForSet().add(redisKey, post.getId());
 
         // 报错的情况,将来统一处理.
-        return EasyCommunityUtil.getJSONString(0, "发布成功!");
+        return EasyCommunityUtils.getJSONString(0, "发布成功!");
     }
 
     @RequestMapping(path = "/detail/{discussPostId}", method = RequestMethod.GET)
@@ -175,7 +175,7 @@ public class DiscussPostController implements EasyCommunityConstant {
                 .setEntityId(id);
         eventProducer.fireEvent(event);
 
-        return EasyCommunityUtil.getJSONString(0);
+        return EasyCommunityUtils.getJSONString(0);
     }
 
     // 加精
@@ -193,10 +193,10 @@ public class DiscussPostController implements EasyCommunityConstant {
         eventProducer.fireEvent(event);
 
         // 计算帖子分数
-        String redisKey = RedisKeyUtil.getPostScoreKey();
+        String redisKey = RedisKeyUtils.getPostScoreKey();
         redisTemplate.opsForSet().add(redisKey, id);
 
-        return EasyCommunityUtil.getJSONString(0);
+        return EasyCommunityUtils.getJSONString(0);
     }
 
     // 删除
@@ -213,7 +213,7 @@ public class DiscussPostController implements EasyCommunityConstant {
                 .setEntityId(id);
         eventProducer.fireEvent(event);
 
-        return EasyCommunityUtil.getJSONString(0);
+        return EasyCommunityUtils.getJSONString(0);
     }
 
 }

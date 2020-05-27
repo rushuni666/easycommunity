@@ -13,6 +13,8 @@ target/
 .springBeans
 .sts4-cache
 
+.mvn
+
 ### IntelliJ IDEA ###
 .idea
 *.iws
@@ -29,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+将删除 log/
+将删除 upload/
+将删除 wk-images/

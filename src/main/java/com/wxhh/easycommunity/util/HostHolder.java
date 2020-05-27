@@ -1,4 +1,4 @@
-package com.wxhh.easycommunity.utils;
+package com.wxhh.easycommunity.util;
 
 import com.wxhh.easycommunity.entity.User;
 import org.springframework.stereotype.Component;

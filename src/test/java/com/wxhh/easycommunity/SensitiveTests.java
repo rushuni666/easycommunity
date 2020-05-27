@@ -1,7 +1,7 @@
 package com.wxhh.easycommunity;
 
 
-import com.wxhh.easycommunity.utils.SensitiveFilter;
+import com.wxhh.easycommunity.util.SensitiveFilter;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

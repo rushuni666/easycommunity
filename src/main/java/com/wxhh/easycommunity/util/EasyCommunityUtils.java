@@ -1,4 +1,4 @@
-package com.wxhh.easycommunity.utils;
+package com.wxhh.easycommunity.util;
 
 import com.alibaba.fastjson.JSONObject;
 import org.apache.commons.lang3.StringUtils;
@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-public class EasyCommunityUtil {
+public class EasyCommunityUtils {
 
     /**
      * 随机字符

@@ -7,7 +7,7 @@ import com.wxhh.easycommunity.entity.Message;
 import com.wxhh.easycommunity.service.DiscussPostService;
 import com.wxhh.easycommunity.service.ElasticsearchService;
 import com.wxhh.easycommunity.service.MessageService;
-import com.wxhh.easycommunity.utils.EasyCommunityConstant;
+import com.wxhh.easycommunity.util.EasyCommunityConstant;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

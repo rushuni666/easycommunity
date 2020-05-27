@@ -1,8 +1,8 @@
 package com.wxhh.easycommunity.service;
 
 import com.wxhh.easycommunity.entity.User;
-import com.wxhh.easycommunity.utils.EasyCommunityConstant;
-import com.wxhh.easycommunity.utils.RedisKeyUtil;
+import com.wxhh.easycommunity.util.EasyCommunityConstant;
+import com.wxhh.easycommunity.util.RedisKeyUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.data.redis.core.RedisOperations;
@@ -25,8 +25,8 @@ public class FollowService implements EasyCommunityConstant {
         redisTemplate.execute(new SessionCallback() {
             @Override
             public Object execute(RedisOperations operations) throws DataAccessException {
-                String followeeKey = RedisKeyUtil.getFolloweeKey(userId, entityType);
-                String followerKey = RedisKeyUtil.getFollowerKey(entityType, entityId);
+                String followeeKey = RedisKeyUtils.getFolloweeKey(userId, entityType);
+                String followerKey = RedisKeyUtils.getFollowerKey(entityType, entityId);
 
                 operations.multi();
 
@@ -42,8 +42,8 @@ public class FollowService implements EasyCommunityConstant {
         redisTemplate.execute(new SessionCallback() {
             @Override
             public Object execute(RedisOperations operations) throws DataAccessException {
-                String followeeKey = RedisKeyUtil.getFolloweeKey(userId, entityType);
-                String followerKey = RedisKeyUtil.getFollowerKey(entityType, entityId);
+                String followeeKey = RedisKeyUtils.getFolloweeKey(userId, entityType);
+                String followerKey = RedisKeyUtils.getFollowerKey(entityType, entityId);
 
                 operations.multi();
 
@@ -57,25 +57,25 @@ public class FollowService implements EasyCommunityConstant {
 
     // 查询关注的实体的数量
     public long findFolloweeCount(int userId, int entityType) {
-        String followeeKey = RedisKeyUtil.getFolloweeKey(userId, entityType);
+        String followeeKey = RedisKeyUtils.getFolloweeKey(userId, entityType);
         return redisTemplate.opsForZSet().zCard(followeeKey);
     }
 
     // 查询实体的粉丝的数量
     public long findFollowerCount(int entityType, int entityId) {
-        String followerKey = RedisKeyUtil.getFollowerKey(entityType, entityId);
+        String followerKey = RedisKeyUtils.getFollowerKey(entityType, entityId);
         return redisTemplate.opsForZSet().zCard(followerKey);
     }
 
     // 查询当前用户是否已关注该实体
     public boolean hasFollowed(int userId, int entityType, int entityId) {
-        String followeeKey = RedisKeyUtil.getFolloweeKey(userId, entityType);
+        String followeeKey = RedisKeyUtils.getFolloweeKey(userId, entityType);
         return redisTemplate.opsForZSet().score(followeeKey, entityId) != null;
     }
 
     // 查询某用户关注的人
     public List<Map<String, Object>> findFollowees(int userId, int offset, int limit) {
-        String followeeKey = RedisKeyUtil.getFolloweeKey(userId, ENTITY_TYPE_USER);
+        String followeeKey = RedisKeyUtils.getFolloweeKey(userId, ENTITY_TYPE_USER);
         Set<Integer> targetIds = redisTemplate.opsForZSet().reverseRange(followeeKey, offset, offset + limit - 1);
 
         if (targetIds == null) {
@@ -97,7 +97,7 @@ public class FollowService implements EasyCommunityConstant {
 
     // 查询某用户的粉丝
     public List<Map<String, Object>> findFollowers(int userId, int offset, int limit) {
-        String followerKey = RedisKeyUtil.getFollowerKey(ENTITY_TYPE_USER, userId);
+        String followerKey = RedisKeyUtils.getFollowerKey(ENTITY_TYPE_USER, userId);
         Set<Integer> targetIds = redisTemplate.opsForZSet().reverseRange(followerKey, offset, offset + limit - 1);
 
         if (targetIds == null) {

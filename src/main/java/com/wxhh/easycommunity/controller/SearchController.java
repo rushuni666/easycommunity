@@ -6,7 +6,7 @@ import com.wxhh.easycommunity.entity.Page;
 import com.wxhh.easycommunity.service.ElasticsearchService;
 import com.wxhh.easycommunity.service.LikeService;
 import com.wxhh.easycommunity.service.UserService;
-import com.wxhh.easycommunity.utils.EasyCommunityConstant;
+import com.wxhh.easycommunity.util.EasyCommunityConstant;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

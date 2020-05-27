@@ -2,8 +2,8 @@ package com.wxhh.easycommunity.service;
 
 import com.wxhh.easycommunity.dao.CommentMapper;
 import com.wxhh.easycommunity.entity.Comment;
-import com.wxhh.easycommunity.utils.EasyCommunityConstant;
-import com.wxhh.easycommunity.utils.SensitiveFilter;
+import com.wxhh.easycommunity.util.EasyCommunityConstant;
+import com.wxhh.easycommunity.util.SensitiveFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;

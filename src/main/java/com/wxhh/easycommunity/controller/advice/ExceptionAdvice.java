@@ -1,6 +1,6 @@
 package com.wxhh.easycommunity.controller.advice;
 
-import com.wxhh.easycommunity.utils.EasyCommunityUtil;
+import com.wxhh.easycommunity.util.EasyCommunityUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -28,7 +28,7 @@ public class ExceptionAdvice {
         if ("XMLHttpRequest".equals(xRequestedWith)) {
             response.setContentType("application/plain;charset=utf-8");
             PrintWriter writer = response.getWriter();
-            writer.write(EasyCommunityUtil.getJSONString(1, "服务器异常!"));
+            writer.write(EasyCommunityUtils.getJSONString(1, "服务器异常!"));
         } else {
             response.sendRedirect(request.getContextPath() + "/error");
         }

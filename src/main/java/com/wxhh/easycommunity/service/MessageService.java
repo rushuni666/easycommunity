@@ -3,7 +3,7 @@ package com.wxhh.easycommunity.service;
 
 import com.wxhh.easycommunity.dao.MessageMapper;
 import com.wxhh.easycommunity.entity.Message;
-import com.wxhh.easycommunity.utils.SensitiveFilter;
+import com.wxhh.easycommunity.util.SensitiveFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.util.HtmlUtils;

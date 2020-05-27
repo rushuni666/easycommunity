@@ -7,9 +7,9 @@ import com.wxhh.easycommunity.entity.Page;
 import com.wxhh.easycommunity.entity.User;
 import com.wxhh.easycommunity.service.MessageService;
 import com.wxhh.easycommunity.service.UserService;
-import com.wxhh.easycommunity.utils.EasyCommunityConstant;
-import com.wxhh.easycommunity.utils.EasyCommunityUtil;
-import com.wxhh.easycommunity.utils.HostHolder;
+import com.wxhh.easycommunity.util.EasyCommunityConstant;
+import com.wxhh.easycommunity.util.EasyCommunityUtils;
+import com.wxhh.easycommunity.util.HostHolder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -132,7 +132,7 @@ public class MessageController implements EasyCommunityConstant {
     public String sendLetter(String toName, String content) {
         User target = userService.findUserByName(toName);
         if (target == null) {
-            return EasyCommunityUtil.getJSONString(1, "目标用户不存在!");
+            return EasyCommunityUtils.getJSONString(1, "目标用户不存在!");
         }
 
         Message message = new Message();
@@ -147,7 +147,7 @@ public class MessageController implements EasyCommunityConstant {
         message.setCreateTime(new Date());
         messageService.addMessage(message);
 
-        return EasyCommunityUtil.getJSONString(0);
+        return EasyCommunityUtils.getJSONString(0);
     }
 
     @RequestMapping(path = "/notice/list", method = RequestMethod.GET)

@@ -1,7 +1,7 @@
 package com.wxhh.easycommunity.controller.interceptor;
 
 import com.wxhh.easycommunity.annotation.LoginRequired;
-import com.wxhh.easycommunity.utils.HostHolder;
+import com.wxhh.easycommunity.util.HostHolder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.method.HandlerMethod;
